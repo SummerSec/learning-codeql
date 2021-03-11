@@ -7,12 +7,10 @@
 
 import java
 
-int getProduct(int x, int y) {
-    x = 1 and
-    y in [0 .. 2] and
-    result = x * y
+predicate isSmall(int i) {
+    i in [1 .. 9]
 }
 
-class MultipleOfThree extends int {
-    MultipleOfThree() { this = getProduct(_, _) }
-}
+from int x
+where x = 2 and isSmall(x)
+select x
