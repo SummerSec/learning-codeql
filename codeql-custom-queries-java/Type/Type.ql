@@ -1,0 +1,1 @@
+select 1.toString() as String  ,1 as INT
