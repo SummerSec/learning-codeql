@@ -115,7 +115,7 @@ string getANeighbor(string country) {
 import java
 
 string getANeighbor(string country) {
-    country = "France" and result = "Belgium"
+    country = "France" and result = "Belgium" 
     or
     country = "France" and result = "Germany"
     or
@@ -127,5 +127,40 @@ string getANeighbor(string country) {
 }
 select getANeighbor("Belgium")
 
+//大致流程（个人推断）14（country=Belgium）->4（country=Belgium）->6（country=Belgium）->8（country=Belgium）->10（country=Belgium）->12（country=Belgium）->4（country=France）输出->6（country=Germany）输出
 ```
 
+![image-20210312171843940](https://gitee.com/samny/images/raw/master//44u18er44ec/44u18er44ec.png)
+
+更多解释可以参考[递归](https://codeql.github.com/docs/ql-language-reference/recursion/#recursion)
+
+
+
+-----
+
+## Kinds of predicates ---谓词的种类
+
+
+
+```
+int getSuccessor(int i) {  // 1. Non-member predicate 非成员谓词
+  result = i + 1 and
+  i in [1 .. 9]
+}
+
+class FavoriteNumbers extends int {
+  FavoriteNumbers() {  // 2. Characteristic predicate 特征谓词（构造or初始化谓词）
+    this = 1 or
+    this = 4 or
+    this = 9
+  }
+
+  string getName() {   // 3. Member predicate for the class FavoriteNumbers 成员谓词
+    this = 1 and result = "one"
+    or
+    this = 4 and result = "four"
+    or
+    this = 9 and result = "nine"
+  }
+}
+```

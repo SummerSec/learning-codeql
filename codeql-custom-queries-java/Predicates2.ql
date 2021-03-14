@@ -9,8 +9,10 @@ string getANeighbor(string country) {
     or
     country = "Germany" and result = "Belgium"
     or
+    country = "shahai" and  result = "beij"
+    or
     country = getANeighbor(result)
 }
 
 select 
-getANeighbor("Belgium") 
+getANeighbor("beij") 
