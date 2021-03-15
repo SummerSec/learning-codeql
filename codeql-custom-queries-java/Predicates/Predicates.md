@@ -149,7 +149,7 @@ int getSuccessor(int i) {  // 1. Non-member predicate 非成员谓词
 }
 
 class FavoriteNumbers extends int {
-  FavoriteNumbers() {  // 2. Characteristic predicate 特征谓词（构造or初始化谓词）
+  FavoriteNumbers() {  // 2. Characteristic predicate 特征谓词
     this = 1 or
     this = 4 or
     this = 9
