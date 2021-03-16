@@ -3,3 +3,4 @@
 *.yml filter=lfs diff=lfs merge=lfs -text
 *.xml filter=lfs diff=lfs merge=lfs -text
 *.code-workspace filter=lfs diff=lfs merge=lfs -text
+*.qll filter=lfs diff=lfs merge=lfs -text
