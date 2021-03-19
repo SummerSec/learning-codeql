@@ -3,5 +3,5 @@ class SmallInt extends int {
 }
 
 from SmallInt x
-where x % 2 = 0 implies x % 4 = 0
+where  x % 2 = 0 implies x % 4 = 0
 select x
