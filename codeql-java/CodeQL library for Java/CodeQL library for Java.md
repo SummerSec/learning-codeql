@@ -188,7 +188,7 @@ select nc
 
 > ➤ 在LGTM.com的查询控制台中可以看到。运行此查询时，可能会得到许多结果，因为许多项目都包含直接扩展 Object 的嵌套类。 
 
-
+![image-20210320173224433](https://gitee.com/samny/images/raw/master/24u32er24ec/24u32er24ec.png)
 
 
 
@@ -236,6 +236,8 @@ select pt
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/7863873821043873550/). None of the LGTM.com demo projects contain parameterized instances of `java.util.Map` in their source code, but they all have results in reference files.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。LGTM.com 演示项目的源代码中都不包含 java.util.Map 的参数化实例，但它们在参考文件中都有结果。
+
+![image-20210320173428831](https://gitee.com/samny/images/raw/master/28u34er28ec/28u34er28ec.png)
 
 In general, generic types may restrict which types a type parameter can be bound to. For instance, a type of maps from strings to numbers could be declared as follows:
 
