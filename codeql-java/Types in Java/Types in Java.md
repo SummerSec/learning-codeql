@@ -46,6 +46,10 @@ select B.getASupertype+()
 
 > ➤ 在LGTM.com的查询控制台中可以看到。如果在上面的示例片段上运行此查询，查询将返回 A、I 和 java.lang.Object。
 
+![image-20210324160901936](https://gitee.com/samny/images/raw/master/2u09er2ec/2u09er2ec.png)
+
+![image-20210324161105048](https://gitee.com/samny/images/raw/master/5u11er5ec/5u11er5ec.png)
+
 > Tip
 >
 > If you want to see the location of `B` as well as `A`, you can replace `B.getASupertype+()` with `B.getASupertype*()` and re-run the query.
@@ -104,6 +108,12 @@ select ce, "Potentially problematic array downcast."
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/8378564667548381869/). Many projects return results for this query.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。许多项目都会返回此查询的结果。
+
+![image-20210324161149391](https://gitee.com/samny/images/raw/master/49u11er49ec/49u11er49ec.png)
+
+
+
+![image-20210324161207361](https://gitee.com/samny/images/raw/master/7u12er7ec/7u12er7ec.png)
 
 Note that by casting `target.getElementType()` to a `RefType`, we eliminate all cases where the element type is a primitive type, that is, `target` is an array of primitive type: the problem we are looking for cannot arise in that case. Unlike in Java, a cast in QL never fails: if an expression cannot be cast to the desired type, it is simply excluded from the query results, which is exactly what we want.
 
@@ -175,7 +185,28 @@ Using these new classes we can extend our query to exclude calls to `toArray` on
 ```
 import java
 
-// Insert the class definitions from above
+/** class representing java.util.Collection.toArray(T[]) */
+class CollectionToArray extends Method {
+    CollectionToArray() {
+        this.getDeclaringType().hasQualifiedName("java.util", "Collection") and
+        this.hasName("toArray") and
+        this.getNumberOfParameters() = 1
+    }
+}
+
+/** class representing calls to java.util.Collection.toArray(T[]) */
+class CollectionToArrayCall extends MethodAccess {
+    CollectionToArrayCall() {
+        exists(CollectionToArray m |
+            this.getMethod().getSourceDeclaration().overridesOrInstantiates*(m)
+        )
+    }
+
+    /** the call's actual return type, as determined from its argument */
+    Array getActualReturnType() {
+        result = this.getArgument(0).getType()
+    }
+}
 
 from CastExpr ce, Array source, Array target
 where source = ce.getExpr().getType() and
@@ -188,6 +219,10 @@ select ce, "Potentially problematic array downcast."
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/3150404889854131463/). Notice that fewer results are found by this improved query.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。请注意，通过这种改进的查询找到的结果较少。
+
+![image-20210324162027070](C:%5CUsers%5CSamny%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210324162027070.png)
+
+![image-20210324162036681](C:%5CUsers%5CSamny%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210324162036681.png)
 
 ## Example: Finding mismatched contains checks
 
@@ -342,7 +377,40 @@ Now we are ready to write a first version of our query:
 ```
 import java
 
-// Insert the class definitions from above
+class JavaUtilCollection extends GenericInterface {
+    JavaUtilCollection() {
+        this.hasQualifiedName("java.util", "Collection")
+    }
+}
+
+class JavaUtilCollectionContains extends Method {
+    JavaUtilCollectionContains() {
+        this.getDeclaringType() instanceof JavaUtilCollection and
+        this.hasStringSignature("contains(Object)")
+    }
+}
+
+class JavaUtilCollectionContainsCall extends MethodAccess {
+    JavaUtilCollectionContainsCall() {
+        exists(JavaUtilCollectionContains jucc |
+            this.getMethod().getSourceDeclaration().overrides*(jucc)
+        )
+    }
+   Type getArgumentType() {
+    result = this.getArgument(0).getType()
+    }
+    Type getCollectionElementType() {
+    exists(RefType D, ParameterizedInterface S |
+        D = this.getMethod().getDeclaringType() and
+        D.hasSupertype*(S) and S.getSourceDeclaration() instanceof JavaUtilCollection and
+        result = S.getTypeArgument(0)
+    )
+    }
+}
+
+predicate haveCommonDescendant(RefType tp1, RefType tp2) {
+    exists(RefType commondesc | commondesc.hasSupertype*(tp1) and commondesc.hasSupertype*(tp2))
+}
 
 from JavaUtilCollectionContainsCall juccc, Type collEltType, Type argType
 where collEltType = juccc.getCollectionElementType() and argType = juccc.getArgumentType() and
@@ -353,6 +421,12 @@ select juccc, "Element type " + collEltType + " is incompatible with argument ty
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/7947831380785106258/).
 
 > ➤ 在LGTM.com的查询控制台中查看。
+
+![image-20210324162120571](https://gitee.com/samny/images/raw/master/20u21er20ec/20u21er20ec.png)
+
+![image-20210324162138891](https://gitee.com/samny/images/raw/master/38u21er38ec/38u21er38ec.png)
+
+![image-20210324162156970](https://gitee.com/samny/images/raw/master/57u21er57ec/57u21er57ec.png)
 
 ### Improvements
 
@@ -375,8 +449,41 @@ Adding these three improvements, our final query becomes:
 ```
 import java
 
-// Insert the class definitions from above
-// 插入上面的类定义
+class JavaUtilCollection extends GenericInterface {
+    JavaUtilCollection() {
+        this.hasQualifiedName("java.util", "Collection")
+    }
+}
+
+class JavaUtilCollectionContains extends Method {
+    JavaUtilCollectionContains() {
+        this.getDeclaringType() instanceof JavaUtilCollection and
+        this.hasStringSignature("contains(Object)")
+    }
+}
+
+class JavaUtilCollectionContainsCall extends MethodAccess {
+    JavaUtilCollectionContainsCall() {
+        exists(JavaUtilCollectionContains jucc |
+            this.getMethod().getSourceDeclaration().overrides*(jucc)
+        )
+    }
+   Type getArgumentType() {
+    result = this.getArgument(0).getType()
+    }
+    Type getCollectionElementType() {
+    exists(RefType D, ParameterizedInterface S |
+        D = this.getMethod().getDeclaringType() and
+        D.hasSupertype*(S) and S.getSourceDeclaration() instanceof JavaUtilCollection and
+        result = S.getTypeArgument(0)
+    )
+    }
+}
+
+predicate haveCommonDescendant(RefType tp1, RefType tp2) {
+    exists(RefType commondesc | commondesc.hasSupertype*(tp1) and commondesc.hasSupertype*(tp2))
+}
+
 from JavaUtilCollectionContainsCall juccc, Type collEltType, Type argType
 where collEltType = juccc.getCollectionElementType() and argType = juccc.getArgumentType() and
     not haveCommonDescendant(collEltType, argType) and
@@ -389,3 +496,9 @@ select juccc, "Element type " + collEltType + " is incompatible with argument ty
 ➤ [See the full query in the query console on LGTM.com](https://lgtm.com/query/8846334903769538099/).
 
 > ➤ 在LGTM.com的查询控制台中查看完整的查询。
+
+![image-20210324162225094](https://gitee.com/samny/images/raw/master/25u22er25ec/25u22er25ec.png)
+
+![image-20210324162253929](https://gitee.com/samny/images/raw/master/53u22er53ec/53u22er53ec.png)
+
+![image-20210324162308579](https://gitee.com/samny/images/raw/master/8u23er8ec/8u23er8ec.png)
