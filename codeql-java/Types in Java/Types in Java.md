@@ -497,8 +497,6 @@ select juccc, "Element type " + collEltType + " is incompatible with argument ty
 
 > ➤ 在LGTM.com的查询控制台中查看完整的查询。
 
-![image-20210324162225094](https://gitee.com/samny/images/raw/master/25u22er25ec/25u22er25ec.png)
 
-![image-20210324162253929](https://gitee.com/samny/images/raw/master/53u22er53ec/53u22er53ec.png)
 
-![image-20210324162308579](https://gitee.com/samny/images/raw/master/8u23er8ec/8u23er8ec.png)
+![image-20210324164441442](https://gitee.com/samny/images/raw/master/41u44er41ec/41u44er41ec.png)
