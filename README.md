@@ -24,7 +24,7 @@ codeql 学习笔记  `只有Java`
 
 
 
-在线文章网站：https://summersec.github.io/categories/codeql/
+文章在线阅读网站：https://summersec.github.io/categories/codeql/
 
 ----
 
