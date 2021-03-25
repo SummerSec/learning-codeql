@@ -206,7 +206,7 @@ select callee, "Not called."
 
 > ➤ 在LGTM.com的查询控制台中可以看到。这种变化对某些项目的结果影响很大，但对其他项目的结果影响不大。这种模式的使用在不同的项目之间差异很大。
 
-![image-20210325165429413](C:%5CUsers%5CSamny%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20210325165429413.png)
+![image-20210325200248875](https://gitee.com/samny/images/raw/master/48u02er48ec/48u02er48ec.png)
 
 ![image-20210325165440723](https://gitee.com/samny/images/raw/master/59u54er59ec/59u54er59ec.png)
 
