@@ -44,7 +44,9 @@ where jdoc = c.getDoc().getJavadoc() and
 select c, author, version
 ```
 
+![image-20210327132707004](https://gitee.com/samny/images/raw/master/7u27er7ec/7u27er7ec.png)
 
+![image-20210327132717979](https://gitee.com/samny/images/raw/master/18u27er18ec/18u27er18ec.png)
 
 `JavadocElement` defines member predicates `getAChild` and `getParent` to navigate up and down the tree of elements. It also provides a predicate `getTagName` to return the tag’s name, and a predicate `getText` to access the text associated with the tag.
 
@@ -63,6 +65,10 @@ where jdoc = c.getDoc().getJavadoc() and
     versionTag.getTagName() = "@version" and versionTag.getParent() = jdoc
 select c, authorTag.getText(), versionTag.getText()
 ```
+
+![image-20210327132707004](https://gitee.com/samny/images/raw/master/7u27er7ec/7u27er7ec.png)
+
+![image-20210327132717979](https://gitee.com/samny/images/raw/master/18u27er18ec/18u27er18ec.png)
 
 The `JavadocTag` has several subclasses representing specific kinds of Javadoc tags:
 
@@ -117,6 +123,14 @@ where c.getDoc().getJavadoc() = pt.getParent()
 select c, pt
 ```
 
+![image-20210327133510876](https://gitee.com/samny/images/raw/master/10u35er10ec/10u35er10ec.png)
+
+![image-20210327133535667](https://gitee.com/samny/images/raw/master/35u35er35ec/35u35er35ec.png)
+
+![image-20210327133548916](https://gitee.com/samny/images/raw/master/48u35er48ec/48u35er48ec.png)
+
+
+
 It’s now easy to add another conjunct to the `where` clause, restricting the query to `@param` tags that refer to a non-existent parameter: we simply need to require that no parameter of `c` has the name `pt.getParamName()`.
 
 > 现在很容易在where子句中添加另一个共轭，将查询限制在引用不存在的参数的@param标签上：我们只需要要求c的任何参数都没有pt.getParamName()这个名字。
@@ -129,6 +143,12 @@ where c.getDoc().getJavadoc() = pt.getParent() and
     not c.getAParameter().hasName(pt.getParamName())
 select pt, "Spurious @param tag."
 ```
+
+![image-20210327133629753](https://gitee.com/samny/images/raw/master/29u36er29ec/29u36er29ec.png)
+
+![image-20210327133636435](https://gitee.com/samny/images/raw/master/36u36er36ec/36u36er36ec.png)
+
+![image-20210327133649013](https://gitee.com/samny/images/raw/master/49u36er49ec/49u36er49ec.png)
 
 
 
@@ -194,7 +214,15 @@ Now we can write a query for finding all callables `c` and `@throws` tags `tt` s
 ```
 import java
 
-// Insert the definitions from above
+// Determine the kind of exception for the `ThrowsTag`
+RefType getDocumentedException(ThrowsTag tt) {
+    result.hasName(tt.getExceptionName())
+}
+
+// Find all `throws` clauses of the callable and get the exception type
+predicate mayThrow(Callable c, RefType exn) {
+    exn.getASupertype*() = c.getAnException().getType()
+}
 
 from Callable c, ThrowsTag tt, RefType exn
 where c.getDoc().getJavadoc() = tt.getParent+() and
@@ -207,9 +235,11 @@ select tt, "Spurious @throws tag."
 
 > ➤ 在LGTM.com的查询控制台中看到这个。这可以在 LGTM.com 演示项目中找到几个结果。
 
+![image-20210327134654810](https://gitee.com/samny/images/raw/master/54u46er54ec/54u46er54ec.png)
 
+![image-20210327135253078](https://gitee.com/samny/images/raw/master/53u52er53ec/53u52er53ec.png)
 
-
+![image-20210327135242786](https://gitee.com/samny/images/raw/master/42u52er42ec/42u52er42ec.png)
 
 
 
@@ -293,28 +323,52 @@ The first case can be covered by changing `getDocumentedException` to use the qu
 > 第一种情况可以通过修改getDocumentedException来使用@throws标签的限定名来处理。为了处理第二种和第三种情况，我们可以引入一个新的谓词visibleIn，它可以检查一个引用类型在编译单元中是否可见，无论是属于同一个包还是被显式导入。然后我们将getDocumentedException重写成:
 
 ```
+import java
+
+// Determine whether a reference type is visible in a compilation unit
 predicate visibleIn(CompilationUnit cu, RefType tp) {
     cu.getPackage() = tp.getPackage()
     or
     exists(ImportType it | it.getCompilationUnit() = cu | it.getImportedType() = tp)
 }
 
+// Determine the kind of exception for the `ThrowsTag`
 RefType getDocumentedException(ThrowsTag tt) {
     result.getQualifiedName() = tt.getExceptionName()
     or
     (result.hasName(tt.getExceptionName()) and visibleIn(tt.getFile(), result))
 }
+
+// Define a class to represent unchecked exceptions
+class UncheckedException extends RefType {
+    UncheckedException() {
+        this.getASupertype*().hasQualifiedName("java.lang", "RuntimeException") or
+        this.getASupertype*().hasQualifiedName("java.lang", "Error")
+    }
+}
+
+// Find all `throws` clauses of the callable and get the exception type
+predicate mayThrow(Callable c, RefType exn) {
+    exn instanceof UncheckedException or
+    exn.getASupertype*() = c.getAnException().getType()
+}
+
+from Callable c, ThrowsTag tt, RefType exn
+where c.getDoc().getJavadoc() = tt.getParent+() and
+    exn = getDocumentedException(tt) and
+    not mayThrow(c, exn)
+select tt, "Spurious @throws tag."
 ```
 
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/8016848987103345329/). This finds many fewer, more interesting results in the LGTM.com demo projects.
 
 > ➤ 在LGTM.com的查询控制台中看到。这在LGTM.com的演示项目中发现了很多少而有趣的结果。
 
+![image-20210327135340417](https://gitee.com/samny/images/raw/master/40u53er40ec/40u53er40ec.png)
 
+![image-20210327135354874](https://gitee.com/samny/images/raw/master/54u53er54ec/54u53er54ec.png)
 
-
-
-
+![image-20210327135400636](https://gitee.com/samny/images/raw/master/0u54er0ec/0u54er0ec.png)
 
 Currently, `visibleIn` only considers single-type imports, but you could extend it with support for other kinds of imports.
 
