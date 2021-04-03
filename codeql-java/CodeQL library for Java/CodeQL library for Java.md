@@ -82,24 +82,22 @@ Class `Type` has a number of subclasses for representing different kinds of type
 
     > PrimitiveType表示一个基元类型，即布尔、字节、char、double、float、int、long、short中的一种；QL还将void和<nulltype>（null文字的类型）归为基本类型。	
 
-* ```
-    RefType
-    ```
-
-     
-
-    represents a reference (that is, non-primitive) type; it in turn has several subclasses:
-
+* `RefType` represents a reference (that is, non-primitive) type; it in turn has several subclasses:
+    
     >  代表一个引用（即非基本）类型；它又有几个子类：
 
     * `Class` represents a Java class. Class代表一个Java类。
-    * `Interface` represents a Java interface.  Interface代表一个Java接口。
+* `Interface` represents a Java interface.  Interface代表一个Java接口。
     * `EnumType` represents a Java `enum` type.  EnumType代表一个Java枚举类型。
-    * `Array` represents a Java array type. Array代表一个Java数组类型。
+* `Array` represents a Java array type. Array代表一个Java数组类型。
+    
+
 
 For example, the following query finds all variables of type `int` in the program:
 
 > 例如，下面的查询可以找到程序中所有类型为int的变量:
+
+
 
 ```
 import java
@@ -114,9 +112,15 @@ select v
 
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/860076406167044435/). You’re likely to get many results when you run this query because most projects contain many variables of type `int`.
 
+
+
 >  在LGTM.com的查询控制台中可以看到。运行此查询时，很可能会得到许多结果，因为大多数项目都包含许多类型为int的变量。
 
+
+
 ![image-20210319172755510](https://gitee.com/samny/images/raw/master/55u27er55ec/55u27er55ec.png)
+
+
 
 Reference types are also categorized according to their declaration scope:
 
@@ -176,6 +180,8 @@ As an example, we can write a query that finds all nested classes that directly 
 
 > 作为一个例子，我们可以写一个查询，找到所有直接扩展Object的嵌套类:
 
+
+
 ```
 import java
 
@@ -184,9 +190,13 @@ where nc.getASupertype() instanceof TypeObject
 select nc
 ```
 
+
+
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/8482509736206423238/). You’re likely to get many results when you run this query because many projects include nested classes that extend `Object` directly.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。运行此查询时，可能会得到许多结果，因为许多项目都包含直接扩展 Object 的嵌套类。 
+
+
 
 ![image-20210320173224433](https://gitee.com/samny/images/raw/master/24u32er24ec/24u32er24ec.png)
 
@@ -237,7 +247,11 @@ select pt
 
 > ➤ 在LGTM.com的查询控制台中可以看到。LGTM.com 演示项目的源代码中都不包含 java.util.Map 的参数化实例，但它们在参考文件中都有结果。
 
+
+
 ![image-20210320173428831](https://gitee.com/samny/images/raw/master/28u34er28ec/28u34er28ec.png)
+
+
 
 In general, generic types may restrict which types a type parameter can be bound to. For instance, a type of maps from strings to numbers could be declared as follows:
 
@@ -270,6 +284,14 @@ select tv
 
 > ➤ 在LGTM.com的查询控制台中可以看到。当我们在LGTM.com的演示项目上运行时，neo4j/neo4j、hibernate/hibernate-orm和apache/hadoop项目都包含了这种模式的例子。
 
+![image-20210403140840778](https://gitee.com/samny/images/raw/master/40u08er40ec/40u08er40ec.png)
+
+![image-20210403140900760](https://gitee.com/samny/images/raw/master/0u09er0ec/0u09er0ec.png)
+
+![image-20210403140909188](https://gitee.com/samny/images/raw/master/9u09er9ec/9u09er9ec.png)
+
+
+
 For dealing with legacy code that is unaware of generics, every generic type has a “raw” version without any type parameters. In the CodeQL libraries, raw types are represented using class `RawType`, which has the expected subclasses `RawClass` and `RawInterface`. Again, there is a predicate `getSourceDeclaration` for obtaining the corresponding generic type. As an example, we can find variables of (raw) type `Map`:
 
 > 对于处理不了解泛型的遗留代码，每个泛型都有一个没有任何类型参数的 "原始 "版本。在CodeQL库中，原始类型用类RawType表示，它有预期的子类RawClass和RawInterface。同样，有一个谓词getSourceDeclaration用于获取相应的通用类型。作为一个例子，我们可以找到（原始）类型Map的变量:
@@ -283,9 +305,21 @@ where rt = v.getType() and
 select v
 ```
 
+
+
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/4032913402499547882/). Many projects have variables of raw type `Map`.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。许多项目都有原始类型Map的变量。
+
+
+
+![image-20210403140742484](https://gitee.com/samny/images/raw/master/42u07er42ec/42u07er42ec.png)
+
+![image-20210403140759377](https://gitee.com/samny/images/raw/master/59u07er59ec/59u07er59ec.png)
+
+![image-20210403140817058](https://gitee.com/samny/images/raw/master/17u08er17ec/17u08er17ec.png)
+
+
 
 For example, in the following code snippet this query would find `m1`, but not `m2`:
 
@@ -364,6 +398,14 @@ select e
 
 > ➤ 在LGTM.com的查询控制台中可以看到。很多项目都有返回语句与子表达式的例子。
 
+![image-20210403140957983](https://gitee.com/samny/images/raw/master/58u09er58ec/58u09er58ec.png)
+
+![image-20210403141011087](https://gitee.com/samny/images/raw/master/11u10er11ec/11u10er11ec.png)
+
+
+
+
+
 Therefore, if the program contains a return statement `return x + y;`, this query will return `x + y`.
 
 > 因此，如果程序中包含一个返回语句return x + y;，这个查询将返回x + y。
@@ -384,6 +426,14 @@ select s
 
 > ➤ 在LGTM.com的查询控制台中可以看到。很多项目都有if语句与子语句的例子。
 
+
+
+![image-20210403141127739](https://gitee.com/samny/images/raw/master/27u11er27ec/27u11er27ec.png)
+
+![image-20210403141143544](https://gitee.com/samny/images/raw/master/43u11er43ec/43u11er43ec.png)
+
+
+
 This query will find both `then` branches and `else` branches of all `if` statements in the program.
 
 > 这个查询可以找到程序中所有if语句的then分支和 else分支。
@@ -403,6 +453,14 @@ select s
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/1016821702972128245/). Most projects have many method bodies.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。大多数项目都有许多方法体。
+
+
+
+![image-20210403141206903](https://gitee.com/samny/images/raw/master/23u12er23ec/23u12er23ec.png)
+
+![image-20210403141218104](https://gitee.com/samny/images/raw/master/20u12er20ec/20u12er20ec.png)
+
+
 
 As these examples show, the parent node of an expression is not always an expression: it may also be a statement, for example, an `IfStmt`. Similarly, the parent node of a statement is not always a statement: it may also be a method or a constructor. To capture this, the QL Java library provides two abstract class `ExprParent` and `StmtParent`, the former representing any node that may be the parent node of an expression, and the latter any node that may be the parent node of a statement.
 
@@ -433,6 +491,16 @@ select c.getAnAnnotation()
 
 > ➤ 在 LGTM.com 的查询控制台中可以看到。LGTM.com 演示项目都使用了注解，您可以看到使用注解来抑制警告和将代码标记为废弃的例子。
 
+
+
+![image-20210403141254733](https://gitee.com/samny/images/raw/master/54u12er54ec/54u12er54ec.png)
+
+![image-20210403141306146](https://gitee.com/samny/images/raw/master/6u13er6ec/6u13er6ec.png)
+
+![image-20210403141313866](https://gitee.com/samny/images/raw/master/13u13er13ec/13u13er13ec.png)
+
+
+
 These annotations are represented by class `Annotation`. An annotation is simply an expression whose type is an `AnnotationType`. For example, you can amend this query so that it only reports deprecated constructors:
 
 > 这些注解由类Annotation表示。注释是一个简单的表达式，其类型是AnnotationType。例如，你可以修改这个查询，使它只报告废弃的构造函数:
@@ -450,6 +518,16 @@ select ann
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/5393027107459215059/). Only constructors with the `@Deprecated` annotation are reported this time.
 
 > ➤ 在LGTM.com的查询控制台中可以看到。这次只报告带有 @Deprecated 注解的构造函数。
+
+
+
+![image-20210403141336606](https://gitee.com/samny/images/raw/master/36u13er36ec/36u13er36ec.png)
+
+![image-20210403141348167](https://gitee.com/samny/images/raw/master/48u13er48ec/48u13er48ec.png)
+
+![image-20210403141356069](https://gitee.com/samny/images/raw/master/56u13er56ec/56u13er56ec.png)
+
+
 
 For more information on working with annotations, see the [article on annotations](https://codeql.github.com/docs/codeql-language-guides/annotations-in-java/).
 
@@ -472,6 +550,14 @@ select jdoc
 
 > ➤ 在LGTM.com的查询控制台中可以看到。在很多项目中都可以看到这种模式。
 
+
+
+![image-20210403141421800](https://gitee.com/samny/images/raw/master/21u14er21ec/21u14er21ec.png)
+
+![image-20210403141431722](https://gitee.com/samny/images/raw/master/31u14er31ec/31u14er31ec.png)
+
+
+
 Class `Javadoc` represents an entire Javadoc comment as a tree of `JavadocElement` nodes, which can be traversed using member predicates `getAChild` and `getParent`. For instance, you could edit the query so that it finds all `@author` tags in Javadoc comments on private fields:
 
 > 类 Javadoc 将整个 Javadoc 注释表示为 JavadocElement 节点的树，可以使用成员谓词 getAChild 和 getParent 遍历。例如，你可以编辑查询，使其找到私有字段的Javadoc注释中的所有@author标签:
@@ -489,6 +575,10 @@ select at
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/2510220694395289111/). None of the LGTM.com demo projects uses the `@author` tag on private fields.
 
 > ➤ 在 LGTM.com 的查询控制台中可以看到。LGTM.com 演示项目中没有一个在私有字段上使用 @author 标签。
+
+
+
+
 
 > Note
 >
@@ -527,6 +617,18 @@ select m
 
 > ➤ 在LGTM.com的查询控制台中可以看到。大多数大型项目都包括一些具有非常高循环复杂性的方法。这些方法可能难以理解和测试。
 
+
+
+![image-20210403141526423](https://gitee.com/samny/images/raw/master/26u15er26ec/26u15er26ec.png)
+
+![image-20210403141546581](https://gitee.com/samny/images/raw/master/46u15er46ec/46u15er46ec.png)
+
+![](https://gitee.com/samny/images/raw/master/38u15er38ec/38u15er38ec.png)
+
+
+
+
+
 ## Call graph
 
 CodeQL databases generated from Java code bases include precomputed information about the program’s call graph, that is, which methods or constructors a given call may dispatch to at runtime.
@@ -554,6 +656,14 @@ select c
 
 > ➤ 在LGTM.com的查询控制台中可以看到。LGTM.com 的演示项目都包含许多对这个名称的方法的调用。
 
+
+
+![image-20210403141611245](https://gitee.com/samny/images/raw/master/11u16er11ec/11u16er11ec.png)
+
+![image-20210403141623796](https://gitee.com/samny/images/raw/master/23u16er23ec/23u16er23ec.png)
+
+
+
 Conversely, `Callable.getAReference` returns a `Call` that refers to it. So we can find methods and constructors that are never called using this query:
 
 > 反之，Callable.getAReference返回一个引用它的Call。所以我们可以使用这个查询找到从未被调用的方法和构造函数:
@@ -569,6 +679,16 @@ select c
 ➤ [See this in the query console on LGTM.com](https://lgtm.com/query/7261739919657747703/). The LGTM.com demo projects all appear to have many methods that are not called directly, but this is unlikely to be the whole story. To explore this area further, see “[Navigating the call graph](https://codeql.github.com/docs/codeql-language-guides/navigating-the-call-graph/).”
 
 > ➤ 在LGTM.com的查询控制台中可以看到。LGTM.com 演示项目似乎都有许多方法没有被直接调用，但这不可能是全部。要进一步探索这个领域，请参见 "导航调用图"。
+
+
+
+![image-20210403141639213](https://gitee.com/samny/images/raw/master/39u16er39ec/39u16er39ec.png)
+
+![image-20210403141650173](https://gitee.com/samny/images/raw/master/57u16er57ec/57u16er57ec.png)
+
+![image-20210403141657082](https://gitee.com/samny/images/raw/master/57u16er57ec/57u16er57ec.png)
+
+
 
 For more information about callables and calls, see the [article on the call graph](https://codeql.github.com/docs/codeql-language-guides/navigating-the-call-graph/).
 
