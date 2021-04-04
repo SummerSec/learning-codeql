@@ -1,5 +1,5 @@
 import java
 
-from MethodAccess exeCmd 
-where exeCmd.getMethod().hasName("exeCmd") 
-select exeCmd
+from Method method
+where method.hasName("index") and method.fromSource()
+select method , method.getDeclaringType()
