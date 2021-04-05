@@ -118,6 +118,15 @@ select clie
 
 
 
+```
+HttpServletRequest request = null
+Cookie[] cookie = request.getCookies();
+byte[] bytes = Tools.base64Decode(cookie.getValue());
+user = (User)Tools.deserialize(bytes);
+
+师傅们，有没有办法将request和bytes联系起来
+```
+
 
 
 ---

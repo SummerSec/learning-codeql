@@ -1,5 +1,5 @@
 import java
 
-from Method method
-where method.hasName("index") and method.fromSource()
-select method , method.getDeclaringType()
+from Method method 
+where method.hasName("deserialize")
+select method
