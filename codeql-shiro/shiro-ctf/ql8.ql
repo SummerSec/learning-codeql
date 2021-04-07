@@ -1,13 +1,18 @@
-import java
-import semmle.code.java.dataflow.DataFlow
-import semmle.code.java.dataflow.TaintTracking
+// import java
 
-class CallTaintStep extends TaintTracking::AdditionalTaintStep{
-    override predicate step(DataFlow::Node n1, DataFlow::Node n2){
-        exists(Call call | 
-        n1.asExpr() = call.getAnArgument() and 
-        n2.asExpr() = call)
+// class Myindex extends RefType{
+//     Myindex(){
+//         this.hasQualifiedName("com.summersec.shiroctf.controller", "IndexController")
+//     }
+// }
 
-    }
+// class MyindexTomenthod extends Call{
+//     MyindexTomenthod(){
+//         this.getDeclaringType().getAnAncestor() instanceof Myindex
+//         and
+//         this.hasName("index")
+//     }
+// }
 
-}
+// from MyindexTomenthod m
+// select m.getParameter(0)

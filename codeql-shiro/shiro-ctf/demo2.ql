@@ -3,12 +3,11 @@
  * @kind path-problem
  * @id java/unsafe-shiro-deserialization
  */
-import java
-import semmle.code.java.dataflow.DataFlow
-import semmle.code.java.dataflow.FlowSources
-// import semmle.code.java.dataflow.TaintTracking
-import DataFlow::PathGraph
 
+
+import java
+import semmle.code.java.dataflow.FlowSources
+import DataFlow::PathGraph
 
 predicate isDes(Expr arg){
     exists(MethodAccess des |
@@ -46,17 +45,18 @@ class MyindexTomenthod extends Method{
     }
 }
 
-class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
+class ShiroUnsafeDeserializationConfig extends TaintTracking::Configuration {
     ShiroUnsafeDeserializationConfig() { 
         this = "StrutsUnsafeDeserializationConfig" 
     }
 
     override predicate isSource(DataFlow::Node source) {
-        exists(DeserializeTobytes m |
-            source.asParameter() = m.getParameter(0)
-            // and
-            // source instanceof RemoteFlowSource
-        )
+        // exists(MyindexTomenthod m |
+        //     source.asParameter() = m.getParameter(0)
+        //     and
+        //     source instanceof RemoteFlowSource
+        // )
+        source instanceof RemoteFlowSource
     }
     override predicate isSink(DataFlow::Node sink) {
         exists(Expr arg|
@@ -64,30 +64,10 @@ class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
             sink.asExpr() = arg /* bytes */
         )
     }
-    
-    // override predicate isAdditionalFlowStep(DataFlow::Node n1 ,DataFlow::Node n2){
-    //     exists(Call call |
-    //         n1.asExpr() = call.getAnArgument() and
-    //         n2.asExpr() = call
-    //     )
-    // }
-    
-    
 }
-
-// class CallTaintStep extends TaintTracking::AdditionalTaintStep {
-//     override predicate step(DataFlow::Node n1, DataFlow::Node n2) {
-//         exists(Call call |
-//         n1.asExpr() = call.getAnArgument() and
-//         n2.asExpr() = call
-//         )
-//     }
-// }
-
-
 
 
 from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
 where config.hasFlowPath(source, sink)
-select sink.getNode(), source, sink, "Unsafe shiro deserialization" ,source.getNode(), "this user input"
-
+// select sink.getNode(), source, sink, "Unsafe shiro deserialization" ,source.getNode(), "this user input"
+select sink, source, sink, "Unsafe shiro deserialization" ,source, "this user input"

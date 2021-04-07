@@ -14,10 +14,11 @@ class DeserializeTobytes extends Method{
         and
         this.hasName("deserialize")
     }
+
 }
 
 
 
 
 from DeserializeTobytes des
-select des
+select des.getParameter(0)

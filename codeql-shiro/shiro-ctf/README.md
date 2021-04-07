@@ -44,7 +44,7 @@ select clie
 
 ```java
 @GetMapping({"/index/{name}"})
-    public String index(HttpServletRequest request, HttpServletResponse response, @PathVariable String name) throws Exception {
+public String index(HttpServletRequest request, HttpServletResponse response, @PathVariable String name) throws Exception {
         Cookie[] cookies = request.getCookies();
         boolean exist = false;
         Cookie cookie = null;
@@ -125,7 +125,85 @@ byte[] bytes = Tools.base64Decode(cookie.getValue());
 user = (User)Tools.deserialize(bytes);
 
 师傅们，有没有办法将request和bytes联系起来
+1. 目前来说我这个查不到任何结果。
+2. 我的预期是将request作为source，sink是deserialize()函数
+3. 但目前中间会有转化是会有影响的吗？
+4. 然后我这样子写肯定是存在问题的，但目前来说我逻辑感觉是没有问题的，我也不知道问题的所在。
 ```
+
+
+
+
+
+```
+/**
+ * @name Unsafe shiro deserialization
+ * @kind path-problem
+ * @id java/unsafe-shiro-deserialization
+ */
+import java
+import semmle.code.java.dataflow.DataFlow
+// import semmle.code.java.dataflow.TaintTracking
+import DataFlow::PathGraph
+
+
+predicate isDes(Expr arg){
+    exists(MethodAccess des |
+    des.getMethod().hasName("deserialize") 
+    and
+    arg = des.getArgument(0)
+    )
+}
+
+class Myindex extends RefType{
+    Myindex(){
+        this.hasQualifiedName("com.summersec.shiroctf.controller", "IndexController")
+    }
+}
+
+class MyindexTomenthod extends Method{
+    MyindexTomenthod(){
+        this.getDeclaringType().getAnAncestor() instanceof Myindex
+        and
+        this.hasName("index")
+    }
+}
+
+class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
+    ShiroUnsafeDeserializationConfig() { 
+        this = "StrutsUnsafeDeserializationConfig" 
+    }
+
+    override predicate isSource(DataFlow::Node source) {
+        exists(MyindexTomenthod m |
+            source.asParameter() = m.getParameter(0)
+        )
+    }
+    override predicate isSink(DataFlow::Node sink) {
+        exists(Expr arg|
+            isDes(arg) and
+            sink.asExpr() = arg /* bytes */
+        )
+    }
+    
+
+    
+    
+}
+
+
+from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
+where config.hasFlowPath(source, sink)
+select sink, source, sink, "Unsafe shiro deserialization"
+
+
+```
+
+
+
+
+
+
 
 
 
