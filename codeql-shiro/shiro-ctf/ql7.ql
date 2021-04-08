@@ -21,4 +21,4 @@ class DeserializeTobytes extends Method{
 
 
 from DeserializeTobytes des
-select des.getParameter(0)
+select des
