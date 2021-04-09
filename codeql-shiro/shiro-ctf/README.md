@@ -1,6 +1,6 @@
 
 
-## one step by one step学习codeql挖掘反序列化漏洞
+## one step by one step学习CodeQL挖掘反序列化漏洞
 
 ### 前言
 
@@ -216,9 +216,25 @@ select des
 
 
 
-对于`Tools#exeCmd`方法的调用可以找到
+对于`Tools#exeCmd`方法的调用可以找到，可以发现`LogHandler`类调用了两次`exeCmd`方法。
+
+```
+import java
+/* 找到调用exeCmd方法 */
+from MethodAccess exeCmd 
+where exeCmd.getMethod().hasName("exeCmd") 
+select exeCmd
+```
 
 
+
+![image-20210408112348838](https://gitee.com/samny/images/raw/master/48u23er48ec/48u23er48ec.png)
+
+![image-20210408112415555](https://gitee.com/samny/images/raw/master/15u24er15ec/15u24er15ec.png)
+
+
+
+下面是`exeCmd`方法的源码，不能发现可以执行任何命令，传入的参数`commandStr`即是将被执行的命令。
 
 ```
 public static String exeCmd(String commandStr) {
@@ -254,10 +270,6 @@ public static String exeCmd(String commandStr) {
 
 
 
-
-
-
-
 ----
 
 ### 精简代码逻辑
@@ -268,84 +280,197 @@ public static String exeCmd(String commandStr) {
 
 
 
-### 确定source和sink
-
-&emsp;&emsp;  首先确定一下`source`和`sink`，现在可以知道的是`IndexController`类中的`index`函数的参数`request`是可以用户可控可以作为一个`source`。然后现在目前已知可以反序列化函数点在`Tools#deserialize`函数，可以作为一个`sink`。
-
-
-
-
-
-
-
-
-
-
-
-```java
-    private Object target;
-    private String readLog = "tail  accessLog.txt";
-    private String writeLog = "echo /test >> accessLog.txt";
-
-    public LogHandler() {
-    }
-
-    public LogHandler(Object target) {
-        this.target = target;
-    }
-
-    @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-
-        Tools.exeCmd(this.writeLog.replaceAll("/test", (String)args[0]));
-        return method.invoke(this.target, args);
-    }
-
-    @Override
-    public String toString() {
-        return Tools.exeCmd(this.readLog);
-    }
-```
-
-
-
-
-
 ```
 HttpServletRequest request = null
-Cookie[] cookie = request.getCookies();
+Cookie[] cookies = request.getCookies();
+Cookie cookie = c
 byte[] bytes = Tools.base64Decode(cookie.getValue());
 user = (User)Tools.deserialize(bytes);
 
-师傅们，有没有办法将request和bytes联系起来
-1. 目前来说我这个查不到任何结果。
-2. 我的预期是将request作为source，sink是deserialize()函数
-3. 但目前中间会有转化是会有影响的吗？
-4. 然后我这样子写肯定是存在问题的，但目前来说我逻辑感觉是没有问题的，我也不知道问题的所在。
 ```
 
+目前就有以下几点：
 
+1. `request`和`bytes`是有联系的
+2. 预期是将`request`作为`source`，`sink`是`deserialize()#bytes`
+3. `Tools#exeCmd`方法肯定是可以被利用的
+4. `Loghandler`类的目的？
+
+
+
+----
+
+
+
+### 污点分析
+
+#### 污点分析简单介绍
+
+&emsp;&emsp; 现在已经确定了(a)程序中接收不受信任数据的地方和(b)程序中可能执行不安全的反序列化的地方。现在把这两个地方联系起来：未受信任的数据是否流向潜在的不安全的反序列化调用？在程序分析中，我们称之为`数据流`问题。数据流作用：这个表达式是否持有一个源程序中某一特定地方的值呢？
+
+&emsp;&emsp; 污点分析是一种跟踪并分析污点信息在程序中流动的技术。在漏洞分析中，使用污点分析技术将所感兴趣的数据（通常来自程序的外部输入）标记为**污点数据**，然后通过跟踪和污点数据相关的信息的流向，可以知道它们是否会影响某些关键的程序操作，进而挖掘程序漏洞。
+
+在CodeQL提供了数据流分析的模块，分为全局数据流、本地数据流、远程数据流。数据流分析有一般有以下几点：
+
+* `source` 定义污染数据即污点
+
+* `sink`  判断污点数据流出
+* `sanitizers` 对数据流判断无害处理（可选）
+* `additionalTaintStep` CodeQL增加判断污染额外步骤（可选）
+
+Example：
+
+```
+int func(int tainted) {
+   int x = tainted;
+   if (someCondition) {
+     int y = x;
+     callFoo(y);
+   } else {
+     return x;
+   }
+   return -1;
+}
+```
+
+&emsp;&emsp; 上面的方法的数据流图是下面这样子，这个图表示污点参数的数据流。图的节点代表有值的程序元素，如函数参数和表达式。该图的边代表流经这些节点的流量。变量 y 的取值依赖于变量 x 的取值，如果变量 x 是污染的，那么变量 y 也应该是污染的。
+
+
+
+![img](https://gitee.com/samny/images/raw/master/20u06er20ec/20u06er20ec.png)
+
+
+
+更多学习资料：
+
+[污点分析简单介绍](https://0range228.github.io/%E6%B1%A1%E7%82%B9%E5%88%86%E6%9E%90%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/) 对污点分析做了详细的介绍
+
+[CodeQL-数据流在Java中的使用](https://github.com/haby0/mark/blob/master/articles/2021/CodeQL-%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9C%A8Java%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8.md) 百度某大佬对CodeQL数据流分析的见解
+
+[CodeQL workshop for Java Unsafe deserialization in Apache Struts](https://summersec.github.io/2021/03/28/CodeQL%20workshop%20for%20Java%20Unsafe%20deserialization%20in%20Apache%20Struts/) 官方对数据流分析简单介绍（中英对照翻译版）
+
+
+
+----
+
+
+
+#### 确定source和sink
+
+&emsp;&emsp;  首先确定一下`source`和`sink`，现在可以知道的是`IndexController`类中的`index`函数的参数`request`是可以用户可控可以作为一个`source`。然后现在目前已知可以反序列化函数点在`Tools#deserialize`方法的传入参数`bytes`，可以作为一个`sink`。
+
+
+
+##### Source部分
 
 
 
 ```
-/**
- * @name Unsafe shiro deserialization
- * @kind path-problem
- * @id java/unsafe-shiro-deserialization
- */
-import java
-import semmle.code.java.dataflow.DataFlow
-// import semmle.code.java.dataflow.TaintTracking
-import DataFlow::PathGraph
+class Myindex extends RefType{
+    Myindex(){
+        this.hasQualifiedName("com.summersec.shiroctf.controller", "IndexController")
+    }
+}
 
+class MyindexTomenthod extends Method{
+    MyindexTomenthod(){
+        this.getDeclaringType().getAnAncestor() instanceof Myindex
+        and
+        this.hasName("index")
+    }
+}
+```
 
+![image-20210408203416533](https://gitee.com/samny/images/raw/master/16u34er16ec/16u34er16ec.png)
+
+##### Sink部分
+
+```
 predicate isDes(Expr arg){
     exists(MethodAccess des |
     des.getMethod().hasName("deserialize") 
     and
     arg = des.getArgument(0)
     )
+}
+```
+
+![image-20210408203429010](https://gitee.com/samny/images/raw/master/29u34er29ec/29u34er29ec.png)
+
+
+
+source部分可以查到request，sink部分可以查到bytes。
+
+
+
+----
+
+##### 全局数据流模板
+
+
+
+```
+/**
+ * @name Unsafe shiro deserialization
+ * @kind problem
+ * @id java/unsafe-deserialization
+ */
+import java
+import semmle.code.java.dataflow.DataFlow
+
+// TODO add previous class and predicate definitions here
+
+class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
+  ShiroUnsafeDeserializationConfig() { this = "ShiroUnsafeDeserializationConfig" }
+  override predicate isSource(DataFlow::Node source) {
+    exists(/** TODO fill me in **/ |
+      source.asParameter() = /** TODO fill me in **/
+    )
+  }
+  override predicate isSink(DataFlow::Node sink) {
+    exists(/** TODO fill me in **/ |
+      /** TODO fill me in **/
+      sink.asExpr() = /** TODO fill me in **/
+    )
+  }
+}
+
+from ShiroUnsafeDeserializationConfig config, DataFlow::Node source, DataFlow::Node sink
+where config.hasFlow(source, sink)
+select sink, "Unsafe Shiro deserialization"
+```
+
+
+
+---
+
+
+
+### 第一次尝试
+
+
+
+CodeQL的注释部分是对查询结果有影响的，`@kind`关键词将`problem`转换为 `path -problem`告诉CodeQL工具将这个查询的结果解释为路径结果。
+
+第一次完整QL代码：
+
+```
+/**
+ * @name Unsafe shiro deserialization
+ * @kind path-problem
+ * @id java/unsafe-deserialization
+ */
+import java
+import semmle.code.java.dataflow.DataFlow
+import semmle.code.java.dataflow.TaintTracking
+
+
+predicate isDes(Expr arg){
+    exists(MethodAccess des |
+    des.getMethod().hasName("deserialize") 
+    and
+    arg = des.getArgument(0))
+
 }
 
 class Myindex extends RefType{
@@ -362,13 +487,14 @@ class MyindexTomenthod extends Method{
     }
 }
 
-class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
+class ShiroUnsafeDeserializationConfig extends TaintTracking::Configuration {
     ShiroUnsafeDeserializationConfig() { 
-        this = "StrutsUnsafeDeserializationConfig" 
+        this = "ShiroUnsafeDeserializationConfig" 
     }
 
     override predicate isSource(DataFlow::Node source) {
         exists(MyindexTomenthod m |
+            // m.
             source.asParameter() = m.getParameter(0)
         )
     }
@@ -384,17 +510,210 @@ class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
     
 }
 
+from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
+where config.hasFlowPath(source, sink)
+select sink, source, sink, "Unsafe Shiro deserialization"
+```
+
+查询时报错：
+
+```
+Exception during results interpretation: Interpreting query results failed: A fatal error occurred: Could not process query metadata.
+Error was: Expected result pattern(s) are not present for query kind "path-problem": Expected between two and four result patterns. [INVALID_RESULT_PATTERNS]
+[2021-04-06 15:53:16] Exception caught at top level: Could not process query metadata.
+                      Error was: Expected result pattern(s) are not present for query kind "path-problem": Expected between two and four result patterns. [INVALID_RESULT_PATTERNS]
+                      com.semmle.cli2.bqrs.InterpretCommand.executeSubcommand(InterpretCommand.java:123)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeWithParent(SubcommandCommon.java:414)
+                      com.semmle.cli2.execute.CliServerCommand.lambda$executeSubcommand$0(CliServerCommand.java:67)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:201)
+                      com.semmle.cli2.execute.CliServerCommand.executeSubcommand(CliServerCommand.java:67)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:430)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:201)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:209)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:91)
+. Will show raw results instead.
+```
+
+当时询问了几个大佬，没解决之后，去GitHub实验室的Discussion去提问老外帮忙解决的。[Discussion332](https://github.com/github/securitylab/discussions/332) 大致意思时导入`import DataFlow::PathGraph`而不是`import semmle.code.java.dataflow.TaintTracking`
+
+
+
+![image-20210408203006971](https://gitee.com/samny/images/raw/master/7u30er7ec/7u30er7ec.png)
+
+
+
+### 第二次尝试
+
+
+
+```
+/**
+ * @name Unsafe shiro deserialization
+ * @kind path-problem
+ * @id java/unsafe-deserialization
+ */
+import java
+import semmle.code.java.dataflow.DataFlow
+//import semmle.code.java.dataflow.TaintTracking
+import DataFlow::PathGraph
+
+predicate isDes(Expr arg){
+    exists(MethodAccess des |
+    des.getMethod().hasName("deserialize") 
+    and
+    arg = des.getArgument(0))
+
+}
+
+class Myindex extends RefType{
+    Myindex(){
+        this.hasQualifiedName("com.summersec.shiroctf.controller", "IndexController")
+    }
+}
+
+class MyindexTomenthod extends Method{
+    MyindexTomenthod(){
+        this.getDeclaringType().getAnAncestor() instanceof Myindex
+        and
+        this.hasName("index")
+    }
+}
+
+// class ShiroUnsafeDeserializationConfig extends TaintTracking::Configuration {
+class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
+    ShiroUnsafeDeserializationConfig() { 
+        this = "ShiroUnsafeDeserializationConfig" 
+    }
+
+    override predicate isSource(DataFlow::Node source) {
+        exists(MyindexTomenthod m |
+            // m.
+            source.asParameter() = m.getParameter(0)
+        )
+    }
+    override predicate isSink(DataFlow::Node sink) {
+        exists(Expr arg|
+            isDes(arg) and
+            sink.asExpr() = arg /* bytes */
+        )
+    }
+    
+
+    
+    
+}
 
 from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
 where config.hasFlowPath(source, sink)
-select sink, source, sink, "Unsafe shiro deserialization"
-
-
+select sink, source, sink, "Unsafe Shiro deserialization"
 ```
 
 
 
+第二次尝试并没有任何报错，但没有任何结果，遗憾收场。
 
+
+
+----
+
+### 第三次尝试
+
+第二次尝试之后，我把全部代码逻辑在脑子进行无数次演算，不断的推敲逻辑是否可行。实在没办法之后咨询了某度大佬之后，师傅建议使用`RemoteFlowSource`，在翻开博客之后成功解决。后期大佬解释了`RemoteFlowSource`的作用，该类考虑了很多种用户输入数据的情况。
+
+```
+/**
+ * @name Unsafe shiro deserialization
+ * @kind path-problem
+ * @id java/unsafe-shiro-deserialization
+ */
+
+
+import java
+import semmle.code.java.dataflow.FlowSources
+import DataFlow::PathGraph
+
+predicate isDes(Expr arg){
+    exists(MethodAccess des |
+    des.getMethod().hasName("deserialize") 
+    and
+    arg = des.getArgument(0)
+    )
+}
+
+class ShiroUnsafeDeserializationConfig extends TaintTracking::Configuration {
+    ShiroUnsafeDeserializationConfig() { 
+        this = "StrutsUnsafeDeserializationConfig" 
+    }
+
+    override predicate isSource(DataFlow::Node source) {
+        source instanceof RemoteFlowSource
+    }
+    override predicate isSink(DataFlow::Node sink) {
+        exists(Expr arg|
+            isDes(arg) and
+            sink.asExpr() = arg /* bytes */
+        )
+    }
+}
+
+from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
+where config.hasFlowPath(source, sink)
+select sink.getNode(), source, sink, "Unsafe shiro deserialization" ,source.getNode(), "this user input"
+// select sink, source, sink, "Unsafe shiro deserialization" ,source, "this user input"
+```
+
+
+
+![image-20210408204606897](https://gitee.com/samny/images/raw/master/18u46er18ec/18u46er18ec.png)
+
+
+
+其实查到这里并没有达到我心理的预期，预期结果是将：`request->cookies->cookie->bytes`整个路径查询出来。于是我又去Discussion去提问了，[Disuccsion334](https://github.com/github/securitylab/discussions/334) ，起初我没看懂老外的意思，老外也没有懂我的意思，语言的障碍，下面是对话内容：
+
+![image-20210408205610338](https://gitee.com/samny/images/raw/master/10u56er10ec/10u56er10ec.png)
+
+老外给的答案，大致意思这样子已经很好，没有必要去追求。实在想的话，得把source部分改了并且增加谓词`isAdditionTaintStep`。
+
+![image-20210408205635743](https://gitee.com/samny/images/raw/master/35u56er35ec/35u56er35ec.png)
+
+
+
+----
+
+### 补充
+
+
+
+```
+private Object target;
+private String readLog = "tail  accessLog.txt";
+private String writeLog = "echo /test >> accessLog.txt";
+
+public LogHandler() {
+}
+
+public LogHandler(Object target) {
+    this.target = target;
+}
+
+@Override
+public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+
+    Tools.exeCmd(this.writeLog.replaceAll("/test", (String)args[0]));
+    return method.invoke(this.target, args);
+}
+
+@Override
+public String toString() {
+    return Tools.exeCmd(this.readLog);
+}
+```
+
+
+
+----
+
+### 总结
 
 
 
@@ -409,3 +728,9 @@ https://xz.aliyun.com/t/7789#toc-0
 https://summersec.github.io/2021/03/28/CodeQL%20workshop%20for%20Java%20Unsafe%20deserialization%20in%20Apache%20Struts/
 
 https://xz.aliyun.com/t/7789#toc-8
+
+https://0range228.github.io/%E6%B1%A1%E7%82%B9%E5%88%86%E6%9E%90%E7%AE%80%E5%8D%95%E4%BB%8B%E7%BB%8D/
+
+https://github.com/github/securitylab/discussions/334
+
+https://github.com/haby0/mark/blob/master/articles/2021/CodeQL-%E6%95%B0%E6%8D%AE%E6%B5%81%E5%9C%A8Java%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8.md
