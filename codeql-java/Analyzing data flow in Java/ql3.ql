@@ -4,7 +4,7 @@ import semmle.code.java.StringFormat
 
 from StringFormatMethod format, MethodAccess call, Expr formatString
 where
-    call.getMethod() = format and
+    call.getMethod() instanceof StringFormatMethod and  // 我认为更合适
     call.getArgument(format.getFormatStringIndex()) = formatString and
     not exists(DataFlow::Node source, DataFlow::Node sink |
         DataFlow::localFlow(source, sink) and
