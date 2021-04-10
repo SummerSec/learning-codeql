@@ -5,7 +5,7 @@ CodeQL学习笔记  `只有Java`
 
 该笔记是为了帮助更多想要学习codeql的新手朋友，如果你有想法和我一起帮助更多人。请发邮件summersec@qq.com
 
-加入运行截屏帮助理解Codeql代码
+加入运行截屏帮助理解CodeQL代码
 
 笔记目前单纯为个人理解，如有错误还请不吝赐教。
 
@@ -37,7 +37,7 @@ CodeQL学习笔记  `只有Java`
 | Youtube                                                      | Twitter                                      | Github                                                       | 文章                                                         | 其他 |
 | ------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- |
 | [Discover vulnerabilities with CodeQL by: Boik Su ](https://youtu.be/UDDHXBFbuqo) | [@boik_su](https://twitter.com/boik_su)      | [codeql_chinese](https://github.com/xsser/codeql_chinese)    | [Github 官方文档](https://codeql.github.com/docs/)           | [Github 官方API](https://codeql.github.com/codeql-standard-libraries/java/index.html) |
-| [[Live Stream] CodeQL Code Scanning Language Tutorial ](https://youtu.be/HH7wLL2g1Iw ) | [@SummerSec](https://twitter.com/SecSummers) | [Github`s CodeQL](https://github.com/github/codeql)          | [haby0 `s 博客](https://github.com/haby0/mark)               |      ||
+| [[Live Stream] CodeQL Code Scanning Language Tutorial ](https://youtu.be/HH7wLL2g1Iw ) | [@SummerSec](https://twitter.com/SecSummers) | [Github's CodeQL](https://github.com/github/codeql)       | [haby0 's 博客](https://github.com/haby0/mark) ||
 | [Securing your code with CodeQL with Sasha Rosenbaum! - OWASP DevSlop](https://youtu.be/G_yDbouY0tM) |                                              | [Github's securitylab](https://github.com/github/securitylab) | [使用codeql 挖掘 ofcms](https://www.anquanke.com/post/id/203674) |      |
 | [What is GitHub Code Scanning? Find VULNERABILITIES in your code](https://youtu.be/A8SERCUE-i4) |                                              |                                                              | [代码分析引擎 CodeQL 初体验](https://paper.seebug.org/1078/#_1) |      |
 | [$3,000 CodeQL query for finding LDAP Injection - Github Security Lab ]( https://youtu.be/qStzSfsEQGQ) |                                              |                                                              | [使用codeql挖掘fastjson利用链](https://xz.aliyun.com/t/7482) |      |
