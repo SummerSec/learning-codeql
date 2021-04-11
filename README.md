@@ -45,6 +45,7 @@ CodeQL学习笔记  `只有Java`
 | [CodeQL as an auditing oracle - POC 2020](https://www.youtube.com/watch?v=XmAEgl8bVhg) |                                              |                                                              | [codeql学习——污点分析](https://xz.aliyun.com/t/7789)         |                                                              |
 | [mbuf-oflow: Finding Vulnerabilities In iOS/MacOS Networking Code](https://www.youtube.com/watch?v=0EHP2gzwVAY) |                                              |                                                              | [如何用CodeQL数据流复现 apache kylin命令执行漏洞](https://xz.aliyun.com/t/8240) |                                                              |
 | [Community-powered security analysis with CodeQL - GitHub Universe 2020](https://youtu.be/Y6PjAaZKNYk) |                                              |                                                              |                                                              |                                                              |
+| [Using GitHub code scanning and CodeQL to detect traces of Solorigate and other backdoors](https://github.blog/2021-03-16-using-github-code-scanning-and-codeql-to-detect-traces-of-solorigate-and-other-backdoors/) |                                              |                                                              |                                                              |                                                              |
 
 
 
