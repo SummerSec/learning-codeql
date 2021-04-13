@@ -391,44 +391,96 @@ For more information about documenting the code that you contribute to this repo
 
 2. Write the `and` at the end of the line. This also applies in `where` clauses.
 
+    > 将 "和 "写在行末。这也适用于`where`子句。
+
 3. *Prefer* to write the `or` keyword on its own line.
+
+    > *`or`关键字*好写在自己的行上。
 
 4. The `or` keyword *may* be written at the end of a line, or within a line, provided that it has no `and` operands.
 
+    > `or`关键字可以写在行末，也可以写在行内，只要它没有`and`操作数。
+
 5. Single-line formulas *may* be used in order to save space or add clarity, particularly in the *body* of a *quantifier/aggregation*.
 
+    > 为了节省空间或增加清晰度，可以*使用单行公式，特别是在*量化符/集合*的*主体中。
+
 6. *Always* use brackets to clarify the precedence of:
+
+   > *6.总是*使用括号来澄清前面的。
+
    - `implies`
    - `if`-`then`-`else`
 
 7. *Avoid* using brackets to clarify the precedence of:
+
+   > *避免*使用方括号，以澄清下列各项的优先次序：
+
    - `not`
    - `and`
    - `or`
 
 8. Parenthesised formulas *can* be written:
+
+   > 可以写括号内的公式:
+
    - Within a single line. There *should not* be an additional space following the opening parenthesis or preceding the closing parenthesis.
+
+       > 在一行之内。开头小括号后或结尾小括号前不应该有*额外的空格。
+
    - Spanning multiple lines. The opening parenthesis *should* be placed at the end of the preceding line, the body should be indented one level, and the closing bracket should be placed on a new line at the outer indentation.
 
+       > 跨越多行。开头小括号*应放在前一行的末尾，正文应缩进一级，结尾括号应放在外缩处的新行上。
+
 9. *Quantifiers/aggregations* *can* be written:
+
+   > *定量词/集合词*可以写。
+
    - Within a single line. In this case, there is no space to the inside of the parentheses, or after the quantifier keyword.
+
+       > 在一行之内。在这种情况下，括号内侧或量化符关键字后不留空格。
+
    - Across multiple lines. In this case, type declarations are on the same line as the quantifier with the first `|` at the same line as the quantifier, the second `|` *must* be at the end of the same line as the quantifier or on its own line at the outer indentation, and the body of the quantifier *must* be indented one level. The closing `)` is written on a new line, at the outer indentation. If the type declarations need to be broken across multiple lines then there must *must* be a line break after the opening `(`, the type declarations indented one level, and the first `|` on its own line at the outer indentation.
 
+       > 跨越多行。在这种情况下，类型声明与量化符在同一行，第一个`|`与量化符在同一行，第二个`|`*必须与量化符在同一行的末尾，或者在自己的行外缩进，量化符的正文*必须缩进一级。结尾的`)`要写在新的一行上，位于外缩进处。如果类型声明需要跨越多行，那么在开头的`(`)`之后必须有一个换行符，类型声明缩进一级，第一个`|`在自己的行上，位于外缩进处。
+
 10. `if`-`then`-`else` *can* be written:
-   - On a single line
+
+   > `if`-`then`-`else`*可以写。
+
+   - On a single line 在单行上
+
    - With the *body* after the `if`/`then`/`else` keyword
+
+       > 在 "if"/"then"/"else "关键字后加上*body*。
+
    - With the *body* indented on the next line
+
+       > 下一行缩进*体*。
+
    - *Always* parenthesise the `else` part if it is a compound formula.
+
+       > 如果是复合公式，总是把 "else "部分括起来。
 
 11. If an `if`-`then`-`else` is broken across multiple lines then the `then` and `else` keywords *should* be at the start of lines aligned with the `if`.
 
+    > 如果一个`if`-`then`-`else`是横跨多行的，那么`then`和`else`关键字应该*在与`if`对齐的行的开头。
+
 12. The `and` and `else` keywords *may* be placed on the same line as the closing parenthesis.
+
+    >  `and`和`else`关键字*可以*与结尾括号放在同一行。
 
 13. The `and` and `else` keywords *may* be "cuddled": `) else (`
 
-14. *Always* qualify *calls* to predicates of the same class with `this`.
+    > `and`和`else`关键字可以*"拥抱"。`）否则（`
 
-15. *Prefer* postfix casts `a.(Expr)` to prefix casts `(Expr)a`.
+1. *Always* qualify *calls* to predicates of the same class with `this`.
+
+    > *总是*用 "这个 "来限定对同一类谓词的*调用。
+
+2. *Prefer* postfix casts `a.(Expr)` to prefix casts `(Expr)a`.
+
+    >  *优先选择*后缀投递`a.(Expr)`为前缀投递`(Expr)a`。
 
 ### Examples
 
@@ -527,18 +579,18 @@ For more information about documenting the code that you contribute to this repo
 
 ## Glossary
 
-| Phrase      | Meaning  |
-|-------------|----------|
-| *[annotation](https://help.semmle.com/QL/ql-handbook/language.html#annotations)* | An additional specifier used to modify a declaration, such as `private`, `override`, `deprecated`, `pragma`, `bindingset`, or `cached`. |
-| *body* | The text inside `{ }`, `( )`, or each section of an `if`-`then`-`else` or `from`-`where`-`select`. |
-| *binary operator* | An operator with two operands, such as comparison operators, `and`, `or`, `implies`, or arithmetic operators. |
-| *call* | A *formula* that invokes a predicate, e.g. `this.isStatic()` or `calls(a,b)`. |
-| *[conjunct](https://help.semmle.com/QL/ql-handbook/language.html#conjunctions)* | A formula that is an operand to an `and`. |
-| *declaration* | A class, module, predicate, field or newtype. |
-| *[disjunct](https://help.semmle.com/QL/ql-handbook/language.html#disjunctions)* | A formula that is an operand to an `or`. |
-| *[formula](https://help.semmle.com/QL/ql-handbook/language.html#formulas)* | A logical expression, such as `A = B`, a *call*, a *quantifier*, `and`, `or`, `not`, `in` or `instanceof`. |
-| *should/should not/avoid/prefer* | Adhere to this rule wherever possible, where it makes sense. |
-| *may/can* | This is a reasonable alternative, to be used with discretion. |
-| *must/always/do not* | Always adhere to this rule. |
-| *[quantifier/aggregation](https://help.semmle.com/QL/ql-handbook/language.html#aggregations)* | `exists`, `count`, `strictcount`, `any`, `forall`, `forex` and so on. |
-| *variable* | A parameter to a predicate, a field, a from variable, or a variable introduced by a *quantifier* or *aggregation*. |
+| Phrase      | Meaning  |  |
+|-------------|----------|-------------|
+| *[annotation](https://help.semmle.com/QL/ql-handbook/language.html#annotations)* | An additional specifier used to modify a declaration, such as `private`, `override`, `deprecated`, `pragma`, `bindingset`, or `cached`. | 用于修改声明的附加指定符，如 "私有"、"覆盖"、"弃用"、"原则"、"绑定集 "或 "缓存"。 |
+| *body* | The text inside `{ }`, `( )`, or each section of an `if`-`then`-`else` or `from`-`where`-`select`. | `{ }`, `( )`, 或`if`-`then`-`else`或`from`-`where`-`select`的每一节中的文字。\| |
+| *binary operator* | An operator with two operands, such as comparison operators, `and`, `or`, `implies`, or arithmetic operators. | 有两个操作数的运算符，如比较运算符、"和"、"或"、"暗示"、算术运算符等。 |
+| *call* | A *formula* that invokes a predicate, e.g. `this.isStatic()` or `calls(a,b)`. | 一个调用谓词的*公式，如`this.isStatic()`或`calls(a,b)`。 |
+| *[conjunct](https://help.semmle.com/QL/ql-handbook/language.html#conjunctions)* | A formula that is an operand to an `and`. | 是 "和 "的操作数的公式。 |
+| *declaration* | A class, module, predicate, field or newtype. | 类、模块、谓词、字段或新类型。 |
+| *[disjunct](https://help.semmle.com/QL/ql-handbook/language.html#disjunctions)* | A formula that is an operand to an `or`. | 是 "或 "的操作数的公式。 |
+| *[formula](https://help.semmle.com/QL/ql-handbook/language.html#formulas)* | A logical expression, such as `A = B`, a *call*, a *quantifier*, `and`, `or`, `not`, `in` or `instanceof`. | 一个逻辑表达式，如 "A=B"、一个*调用*、一个*量化器*、"和"、"或"、"不"、"在 "或 "实例"。 |
+| *should/should not/avoid/prefer* | Adhere to this rule wherever possible, where it makes sense. | 在可能的情况下，在合理的情况下，遵守本规则。 |
+| *may/can* | This is a reasonable alternative, to be used with discretion. | 这是个合理的选择，要谨慎使用。                               |
+| *must/always/do not* | Always adhere to this rule. | 始终遵守此规则。                                             |
+| *[quantifier/aggregation](https://help.semmle.com/QL/ql-handbook/language.html#aggregations)* | `exists`, `count`, `strictcount`, `any`, `forall`, `forex` and so on. |                                                              |
+| *variable* | A parameter to a predicate, a field, a from variable, or a variable introduced by a *quantifier* or *aggregation*. | 谓词、字段、from变量、或由*量化器*或*集合*引入的变量的参数。\| |
