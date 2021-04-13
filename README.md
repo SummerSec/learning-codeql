@@ -15,14 +15,17 @@ CodeQL学习笔记  `只有Java`
 
 
 
-| 目录                       | 内容                       |
-| -------------------------- | -------------------------- |
-| codeql-custom-queries-java | codeql的一些语法规则       |
-| codeql-java                | codeql对于Java方向上的内容 |
+| 目录                       | 内容                                                         |
+| -------------------------- | ------------------------------------------------------------ |
+| codeql-custom-queries-java | codeql的一些语法规则                                         |
+| codeql-java                | codeql对于Java方向上的内容                                   |
+| codeql-docs                | codeql官方对codeql格式要求文档等                             |
+| codeql-java                | CodeQL官方的实验并学习如何为由Java代码库生成的CodeQL数据库编写有效和高效的查询。 |
+| codeql-java-vul            | 漏洞规则编写文章（自写）                                     |
 
 
 
-文章在线阅读网站：https://summersec.github.io/categories/codeql/
+
 
 
 
