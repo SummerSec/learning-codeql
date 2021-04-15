@@ -6,6 +6,8 @@ Analyzing databases with the CodeQL CLI
 To analyze a codebase, you run queries against a CodeQL
 database extracted from the code.
 
+> 要分析代码库，你需要对从代码中提取的CodeQLdatabase运行查询。
+
 CodeQL analyses produce :ref:`interpreted results
 <interpret-query-results>` that can be displayed as alerts or paths in source code.
 For information about writing queries to run with ``database analyze``, see
@@ -133,7 +135,7 @@ For example, to run the LGTM.com query suite on a C++ codebase (generating
 results in the latest SARIF format), you would run::
 
    codeql database analyze <cpp-database> cpp-lgtm.qls --format=sarif-latest --output=cpp-analysis/cpp-results.sarif
-   
+
 For information about creating custom query suites, see ":doc:`Creating
 CodeQL query suites <creating-codeql-query-suites>`."
 
@@ -226,3 +228,5 @@ Further reading
 ---------------
 
 - ":ref:`Analyzing your projects in CodeQL for VS Code <analyzing-your-projects>`"
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
