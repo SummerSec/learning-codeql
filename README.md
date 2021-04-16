@@ -21,7 +21,7 @@ CodeQL学习笔记  `只有Java`
 | codeql-java                | codeql对于Java方向上的内容                                   |
 | codeql-docs                | codeql官方对codeql格式要求文档等                             |
 | codeql-java                | CodeQL官方的实验并学习如何为由Java代码库生成的CodeQL数据库编写有效和高效的查询。 |
-| codeql-java-vul            | 漏洞规则编写文章（自写）                                     |
+| codeql-java-vul            | java vul QL                                                  |
 
 
 
