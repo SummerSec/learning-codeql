@@ -10,4 +10,5 @@ liberapay: # Replace with a single Liberapay username
 issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
 custom: # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
-custom: https://img-blog.csdnimg.cn/20210208234545304.png
+custom: ['https://gitee.com/samny/images/raw/master/53u47er53ec/53u47er53ec.png','https://img-blog.csdnimg.cn/20210208234545304.png']
+
