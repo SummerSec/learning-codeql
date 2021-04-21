@@ -144,3 +144,17 @@ select sink, "PII data from field $@ is written to long here",f , f.getName()
 
 ---
 
+
+
+### RefType
+
+1. *getASupertype()* 
+
+    ![image-20210421172051818](https://gitee.com/samny/images/raw/master/51u20er51ec/51u20er51ec.png)
+
+2. *getDeclaringType()*
+
+    ![image-20210421172307671](https://gitee.com/samny/images/raw/master/7u23er7ec/7u23er7ec.png)
+
+    ![](https://gitee.com/samny/images/raw/master/22u23er22ec/22u23er22ec.png)
+
