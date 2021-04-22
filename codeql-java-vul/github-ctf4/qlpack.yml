@@ -1,0 +1,6 @@
+name: github-ctf4-codeql
+version: 0.0.0
+libraryPathDependencies: codeql-java
+# name: codeql-queries-java
+# version: 0.0.0
+# libraryPathDependencies: codeql-java
