@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:788948116cc2cde18ab88bb20ccfba74462b1c5ca3bd1633b69f202d11bdfa06
 size 950
+=======
+# These are supported funding model platforms
+
+github: # Replace with up to 4 GitHub Sponsors-enabled usernames e.g., [user1, user2]
+patreon: # Replace with a single Patreon username
+open_collective: # Replace with a single Open Collective username
+ko_fi: # Replace with a single Ko-fi username
+tidelift: # Replace with a single Tidelift platform-name/package-name e.g., npm/babel
+community_bridge: # Replace with a single Community Bridge project-name e.g., cloud-foundry
+liberapay: # Replace with a single Liberapay username
+issuehunt: # Replace with a single IssueHunt username
+otechie: # Replace with a single Otechie username
+custom: # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
+custom: ['https://gitee.com/samny/images/raw/master/53u47er53ec/53u47er53ec.png','https://img-blog.csdnimg.cn/20210208234545304.png','https://user-images.githubusercontent.com/47944478/115138300-d58b2200-a05d-11eb-8be8-6d7f141a9f45.png']
+
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

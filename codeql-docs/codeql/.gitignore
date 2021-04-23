@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:8c21a59091a8105d0a68c2fcee338c44523729af17d04586a5e2e6ad0b118adb
 size 124
+=======
+# VSCode rst extension build directory
+**/_build/
+
+# VSCode rst extension settings
+**/.vscode
+
+# QLlexer .pyc files
+**/*.pyc
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

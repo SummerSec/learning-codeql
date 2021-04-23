@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:6d5579b89678c04e8a7f4f92c0aac14a22ccc13bc541dbb2b5cfeed0f43689fa
 size 238
+=======
+extends: existence
+message: Always spell out the name of the month.
+link: https://docs.microsoft.com/en-us/style-guide/numbers#numbers-in-dates
+ignorecase: true
+level: error
+nonword: true
+tokens:
+  - '\b\d{1,2}/\d{1,2}/(?:\d{4}|\d{2})\b'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,3 +1,25 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:ac974f4ab892e2ac47259ad4c8aeac713ede536a53f2c8cdbed142b642574721
 size 574
+=======
+  <slide class="{% if slide_number==1 %}title-slide segue nobackground {% endif %} {% if slide_classes %}{{ ' '.join(slide_classes) }} {% endif %}level-{{ level }}"{% if id %} id="{{ id }}"{% endif %}>
+ 
+    <hgroup>
+      <h{{ level }}>{{ title }}</h{{ level }}>
+    </hgroup>
+    
+    <article class="{{ content_classes|join(' ') }}">
+
+      {{ content }}
+
+
+{% if config.slide_numbers %}
+<div class="slide-no">{{ slide_number }}</div>
+{% endif %}
+{% if config.slide_footer %}
+<div class="slide-footer">{{ config.slide_footer }}</div>
+{% endif %}
+    </article>
+  </slide>
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

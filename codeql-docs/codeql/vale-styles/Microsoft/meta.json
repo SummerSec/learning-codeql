@@ -1,3 +1,23 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:997e25790190bd2279bbdbb1aacc3e079bd7ecc2d969c9fe751a352f5a312ad7
 size 643
+=======
+{
+  "author": "Joseph Kato",
+  "description": "A Vale-compatible implementation of the Microsoft Writing Style Guide.",
+  "email": "support@errata.ai",
+  "lang": "en",
+  "url": "https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip",
+  "feed": "https://github.com/errata-ai/Microsoft/releases.atom",
+  "issues": "https://github.com/errata-ai/Microsoft/issues/new",
+  "license": "MIT",
+  "name": "Microsoft",
+  "sources": [
+    "https://docs.microsoft.com/en-us/style-guide/welcome/",
+    "https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/LICENSE"
+  ],
+  "vale_version": ">=1.0.0",
+  "coverage": 0.0
+}
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

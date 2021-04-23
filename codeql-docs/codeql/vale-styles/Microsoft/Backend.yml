@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:734835b92f2786f983e7858bd66e6181e6f6dd7ffc3ea5553d477b3cbbecca07
 size 396
+=======
+extends: substitution
+message: Use %s instead of '%s'
+level: warning
+link: 'https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/b/back-end'
+# Use 'back end' (noun) or 'back-end' (adj).
+pos: 'back-end/NN|backend/(?:JJ|NN)|back/\w+ end/JJ|back/(?:JJ|RB) end/\w+'
+ignorecase: true
+swap:
+  back-end: "'back end'"
+  back end: "'back-end'"
+  backend: "'back end' or 'back-end'"
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

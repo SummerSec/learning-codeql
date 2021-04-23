@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:94dbdaa5c2d623d2942ee4234a0fb5c33e850b2e8a267072981af561d4954357
 size 235
+=======
+extends: existence
+message: Avoid using acronyms in a title or heading.
+link: https://docs.microsoft.com/en-us/style-guide/acronyms#be-careful-with-acronyms-in-titles-and-headings
+level: warning
+scope: heading
+tokens:
+  - '[A-Z]{2,4}'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:2a39ce71f3b383fb38f512a435f48ec8ae5a56d08575bea9709da7d702927347
 size 186
+=======
+extends: existence
+message: Use an en dash in a range of numbers.
+link: https://docs.microsoft.com/en-us/style-guide/numbers
+nonword: true
+level: error
+tokens:
+  - '\b\d+\s?[-]\s?\d+\b'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

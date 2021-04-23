@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:d67a89ba4ef71bea4be73e5f5bae5d58955f56a14cadde5a1436c2016261530d
 size 334
+=======
+extends: existence
+message: Don’t use ordinal numbers for dates.
+link: https://docs.microsoft.com/en-us/style-guide/numbers#numbers-in-dates
+level: error
+nonword: true
+tokens:
+  - '(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)|May|Jun(?:e)|Jul(?:y)|Aug(?:ust)|Sep(?:tember)?|Oct(?:ober)|Nov(?:ember)?|Dec(?:ember)?) [a-z-]+\b'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

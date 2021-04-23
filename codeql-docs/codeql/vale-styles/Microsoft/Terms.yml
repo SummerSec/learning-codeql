@@ -1,3 +1,47 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:e1b455199cb7c868e4c6f977c5376d667a071a7b367f3cafda0af5017520124e
 size 1025
+=======
+extends: substitution
+message: "Prefer '%s' over '%s'."
+level: warning
+ignorecase: true
+swap:
+  '(?:agent|virtual assistant|intelligent personal assistant)': personal digital assistant
+  '(?:drive C:|drive C>|C: drive)': drive C
+  '(?:internet bot|web robot)s?': bot(s)
+  '(?:microsoft cloud|the cloud)': cloud
+  '(?:mobile|smart) ?phone': phone
+  '24/7': every day
+  'audio(?:-| )book': audiobook
+  'back(?:-| )light': backlight
+  'chat ?bots?': chatbot(s)
+  adaptor: adapter
+  administrate: administer
+  afterwards: afterward
+  alphabetic: alphabetical
+  alphanumerical: alphanumeric
+  anti-aliasing: antialiasing
+  anti-malware: antimalware
+  anti-spyware: antispyware
+  anti-virus: antivirus
+  appendixes: appendices
+  artificial intelligence: artificial intelligence
+  assembler: assembly language
+  bpp: bpp
+  bps: bps
+  caap: CaaP
+  conversation-as-a-platform: conversation as a platform
+  eb: EB
+  gb: GB
+  gbps: Gbps
+  kb: KB
+  keypress: keystroke
+  mb: MB
+  pb: PB
+  tb: TB
+  zb: ZB
+  viz: namely
+  ergo: therefore
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

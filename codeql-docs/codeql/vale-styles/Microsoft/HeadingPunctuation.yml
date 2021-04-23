@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:759d1855dd9f99df2835f701dd20b02c1cb24299582bd250be784da73b5caaeb
 size 222
+=======
+extends: existence
+message: "Don’t use end punctuation in headings."
+link: https://docs.microsoft.com/en-us/style-guide/punctuation/periods
+nonword: true
+level: warning
+scope: heading
+tokens:
+  - '[a-z0-9][.?!](?:\s|$)'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

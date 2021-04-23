@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:9a29ce4fa4cac200a4ee3335df76bcbebef42f6f82fa92a73040623aa846e630
 size 186
+=======
+extends: existence
+message: For a general audience, use 'address' rather than 'URL'.
+link: https://docs.microsoft.com/en-us/style-guide/urls-web-addresses
+level: warning
+tokens:
+  - URL
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

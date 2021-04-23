@@ -1,3 +1,32 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:0de3843cf4cc9dab8e49e93e4e02a3aeb5c85659304318e6fab5b3a9d786c6db
 size 746
+=======
+/*Smartphones (portrait and landscape) ----------- */
+/*@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+
+}*/
+/* Smartphones (portrait) ----------- */
+/* Styles */
+/* line 17, ../scss/phone.scss */
+slides > slide {
+  /*  width: $slide-width !important;
+    height: $slide-height !important;
+    margin-left: -$slide-width / 2 !important;
+    margin-top: -$slide-height / 2 !important;
+  */
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

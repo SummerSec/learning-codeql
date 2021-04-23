@@ -1,3 +1,12 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:86b1c1ae08737c000a8c1d6eee1a1c16fa2712390c4ef80b8bfc00375ece378e
 size 159
+=======
+name: shiro-ctf-codeql
+version: 0.0.0
+libraryPathDependencies: codeql-java
+# name: codeql-queries-java
+# version: 0.0.0
+# libraryPathDependencies: codeql-java
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

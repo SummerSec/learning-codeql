@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:82c69cbdb8a5d30ab165f7beee67b4e6a4b75fbe7216c23a5e4a348fc93afe79
 size 73
+=======
+name: codeql-queries
+version: 0.0.0
+libraryPathDependencies: codeql-java
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

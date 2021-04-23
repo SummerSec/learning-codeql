@@ -1,3 +1,23 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:d807985039869a03caa51808798cf6bbe7f71c548ac43373e6b68948f8bb418c
 size 388
+=======
+extends: existence
+message: "Don't spell out the number in '%s'."
+link: https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/term-collections/units-of-measure-terms
+nonword: true
+level: error
+raw:
+  - '\b[a-zA-Z]+\s'
+tokens:
+  - '(?:centi|milli)?meters'
+  - '(?:kilo)?grams'
+  - '(?:kilo)?meters'
+  - '(?:mega)?pixels'
+  - cm
+  - inches
+  - lb
+  - miles
+  - pounds
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

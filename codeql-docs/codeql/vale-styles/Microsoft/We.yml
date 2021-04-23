@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:641b90f712a43a7243e196aa6934f90fec46f9bd6d39addf3bd70df01eb92bde
 size 217
+=======
+extends: existence
+message: Try to avoid using first-person plural like '%s'.
+link: https://docs.microsoft.com/en-us/style-guide/grammar/person#avoid-first-person-plural
+level: warning
+ignorecase: true
+tokens:
+  - we
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

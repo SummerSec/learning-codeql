@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:37f25d4542a7125ce4b908c941ef8952f5e2a6f2ed74a7ece05871187688869d
 size 189
+=======
+extends: existence
+message: "In general, don’t use an ellipsis."
+link: https://docs.microsoft.com/en-us/style-guide/punctuation/ellipses
+nonword: true
+level: warning
+tokens:
+  - '\.\.\.'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

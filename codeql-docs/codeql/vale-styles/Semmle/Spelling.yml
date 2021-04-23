@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:e12d33eb9b3f2a95adb8de5a8e94a480bdf89d4026909f33a4c49e6ea6d41fbd
 size 195
+=======
+# This enables spell checking using the built-in US English dictionary
+
+extends: spelling
+message: "Did you really mean '%s'?"
+ignorecase: true
+level: error
+ignore: vale-styles/Semmle/ignore.txt
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

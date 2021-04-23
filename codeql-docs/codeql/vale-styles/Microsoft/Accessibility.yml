@@ -1,3 +1,31 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:0ed866e78a16ecbaaf1da21d63ea280a02d7f7ef865a4347e918eae3a322cc29
 size 535
+=======
+extends: existence
+message: "Don’t use language ('%s') that defines people by their disability."
+link: 'https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/term-collections/bits-bytes-terms'
+level: suggestion
+ignorecase: true
+tokens:
+  - a victim of
+  - able-bodied
+  - affected by
+  - an epileptic
+  - crippled
+  - disabled
+  - dumb
+  - handicapped
+  - handicaps
+  - healthy
+  - lame
+  - maimed
+  - missing a limb
+  - mute
+  - normal
+  - sight-impaired
+  - stricken with
+  - suffers from
+  - vision-impaired
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

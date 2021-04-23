@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:1fe8b84a70c9ef791291235f2dfb12d7c3a25af658f9f04c517fa501b9106c00
 size 202
+=======
+extends: existence
+message: "Use the Oxford comma in '%s'."
+link: 'https://docs.microsoft.com/en-us/style-guide/punctuation/commas'
+scope: sentence
+level: warning
+tokens:
+  - '(?:[^,]+,){1,}\s\w+\sand'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

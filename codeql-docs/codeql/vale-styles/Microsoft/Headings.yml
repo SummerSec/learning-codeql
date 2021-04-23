@@ -1,3 +1,34 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:94639dc311f65a83257fa591c3d02d73dc4159b231c1c48b196af984b41250d9
 size 434
+=======
+extends: capitalization
+message: "'%s' should use sentence-style capitalization."
+link: 'https://docs.microsoft.com/en-us/style-guide/capitalization'
+level: suggestion
+scope: heading
+match: $sentence
+indicators:
+  - ':'
+exceptions:
+  - Azure
+  - CLI
+  - Code
+  - Cosmos
+  - Docker
+  - Emmet
+  - I
+  - Kubernetes
+  - Linux
+  - macOS
+  - Marketplace
+  - MongoDB
+  - REPL
+  - Studio
+  - TypeScript
+  - URLs
+  - Visual
+  - VS
+  - Windows
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

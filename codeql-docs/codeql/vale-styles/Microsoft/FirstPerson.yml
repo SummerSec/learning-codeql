@@ -1,3 +1,15 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:92408c9d27f9b20b115c9f1bd3f33664ef42eabd325ae9d33bb0ef87b7edbe8c
 size 214
+=======
+extends: existence
+message: "Use first person sparingly ('%s')."
+link: 'https://docs.microsoft.com/en-us/style-guide/grammar/person'
+ignorecase: true
+level: warning
+nonword: true
+tokens:
+  - (?:^|\s)I\s
+  - \bme\b
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

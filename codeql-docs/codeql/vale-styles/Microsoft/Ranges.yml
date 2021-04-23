@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:8bddedba33dac390e8a8682dd78351871d861c8afcb015bf04728f27ea034c6e
 size 228
+=======
+extends: existence
+message: "In most cases, use 'from' or 'through' to describe a range of numbers."
+link: 'https://docs.microsoft.com/en-us/style-guide/numbers'
+nonword: true
+level: warning
+tokens:
+  - '\b\d+\s?[-–]\s?\d+\b'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

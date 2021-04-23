@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:4f207cb8ef8766e15574cea1e3f683c4a51c078ad70e1f41ef4a3e320afb7611
 size 285
+=======
+extends: substitution
+message: 'Use "%s" instead of "%s".'
+link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-us-spelling-avoid-non-english-words
+ignorecase: true
+level: error
+nonword: true
+swap:
+  '\b(?:eg|e\.g\.)[\s,]': for example
+  '\b(?:ie|i\.e\.)[\s,]': that is
+
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,3 +1,13 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:78d6e2b908f36130111a69a9dfd7f9ed5fa7e621b6706341b8e0ccbcf554f370
 size 210
+=======
+extends: existence
+message: "In general, don’t hyphenate '%s'."
+link: 'https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/auto'
+ignorecase: true
+level: error
+tokens:
+  - 'auto-\w+'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

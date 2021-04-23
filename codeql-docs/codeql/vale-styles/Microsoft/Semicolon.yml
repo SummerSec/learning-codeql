@@ -1,3 +1,14 @@
+<<<<<<< HEAD
 version https://git-lfs.github.com/spec/v1
 oid sha256:958c8ff65b0b2fcedba174b02986f5f904756b5b3faa5943e7149607d119d300
 size 199
+=======
+extends: existence
+message: "Try to simplify this sentence."
+link: https://docs.microsoft.com/en-us/style-guide/punctuation/semicolons
+nonword: true
+scope: sentence
+level: suggestion
+tokens:
+  - ';'
+>>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5
