@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a648153a23e5bda093e2b372f4313af40fcd19f92c319e84ec02485e1f6b1293
-size 2257
-=======
 .. _upgrading-codeql-databases:
 
 Upgrading CodeQL databases
@@ -57,4 +52,3 @@ with your queries and libraries. It will rewrite the database, if necessary, or
 make no changes if the database is already compatible (or if it finds no
 information about how to perform an upgrade). Once a database has been upgraded
 it cannot be downgraded for use with older versions of the CodeQL products.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

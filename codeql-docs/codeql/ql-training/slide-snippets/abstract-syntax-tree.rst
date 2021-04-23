@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d20b6becca515fae71afa146e27f1e4370ffbf2be51a53312e363138b5ec9821
-size 4818
-=======
 Abstract syntax trees
 =====================
 
@@ -73,4 +68,3 @@ Entity types are rarely used directly, the usual pattern is to define a class th
   - https://github.com/github/codeql/blob/main/cpp/ql/src/semmlecode.cpp.dbscheme 
   - https://github.com/github/codeql/blob/main/csharp/ql/src/semmlecode.csharp.dbscheme 
   - https://github.com/github/codeql/blob/main/java/ql/src/config/semmlecode.dbscheme 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

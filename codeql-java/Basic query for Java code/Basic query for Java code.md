@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc6ed9072551689009df50c1a5526ee8f08af7a9b565376e18549732cf3e73a0
-size 10732
-=======
 # Basic query for Java code[¶](https://codeql.github.com/docs/codeql-language-guides/basic-query-for-java-code/#basic-query-for-java-code)
 
 
@@ -179,4 +174,3 @@ To exclude `if` statements that have an `else` branch:
 
 * “[QL language reference](https://codeql.github.com/docs/ql-language-reference/#ql-language-reference)”
 * “[CodeQL tools](https://codeql.github.com/docs/codeql-overview/codeql-tools/#codeql-tools)”
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

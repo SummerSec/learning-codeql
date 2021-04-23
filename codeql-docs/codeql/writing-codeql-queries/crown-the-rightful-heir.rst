@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e262ca5abdff88a43967ca4ed6c7004ee755468c8581addc19d20313874a236
-size 8136
-=======
 .. _crown-the-rightful-heir:
 
 Crown the rightful heir
@@ -169,4 +164,3 @@ Further reading
 ---------------
 
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

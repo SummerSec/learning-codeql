@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c4b4bee7775dc28246ce6e8078c5eb88d479d22e8675592586c4c1664eba1665
-size 39984
-=======
 .. _abstract-syntax-tree-classes-for-working-with-java-programs:
 
 Abstract syntax tree classes for working with Java programs
@@ -390,4 +385,3 @@ Further reading
 .. _ClassInstanceExpr: https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Expr.qll/type.Expr$ClassInstanceExpr.html
 .. _ArrayInit: https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Expr.qll/type.Expr$ArrayInit.html
 .. _Annotation: https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Annotation.qll/type.Annotation$Annotation.html
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

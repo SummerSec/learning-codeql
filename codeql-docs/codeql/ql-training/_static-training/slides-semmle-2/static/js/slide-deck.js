@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1abb3402ad52257535bca404baac630dd35970cec27ae6f3e9b7dd1a8c7bd46b
-size 24447
-=======
 /**
  * @authors Luke Mahe
  * @authors Eric Bidelman
@@ -900,4 +895,3 @@ SlideDeck.prototype.loadAnalytics_ = function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 };
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

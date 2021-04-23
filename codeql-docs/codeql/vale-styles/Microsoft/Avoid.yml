@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:05e82771943bc6436c491999f10b8a2d2e6afaa663bb6690593573cc321d8a43
-size 328
-=======
 extends: existence
 message: Don't use '%s'.
 link: https://docs.microsoft.com/en-us/style-guide
@@ -20,4 +15,3 @@ tokens:
   - ask
   - backbone
   - abortion
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

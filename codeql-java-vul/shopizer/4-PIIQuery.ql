@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:76aeaa25fe9b44ae209e504d01b407949b6030d7aa318085e283219bf2875f87
-size 1184
-=======
 /**
  *@name PIIQuery
  *@kind problem
@@ -45,4 +40,3 @@ where
     // f.getAnAccess() = source.asExpr()
 // select sink, "PII data from field $@ is written to long here",f , f.getName()
 select sink,"PII data from field $@ is written to long here",source, source.asExpr().toString()
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

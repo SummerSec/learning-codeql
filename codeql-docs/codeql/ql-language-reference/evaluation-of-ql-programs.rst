@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ab3da78f437bc0e6dd02a7b9f32fb2f9213fe2bc34d9d26c576132c277758b9
-size 10291
-=======
 :tocdepth: 1
 
 .. _evaluation-of-ql-programs:
@@ -189,4 +184,3 @@ example, instead of ``int timesTwo(int n) { result = n * 2 }``, you could write:
 
 The predicate now binds ``n``, and the variable ``result`` automatically becomes bound by the 
 computation ``result = n * 2``.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

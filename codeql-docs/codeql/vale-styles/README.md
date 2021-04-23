@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:effd9842b08725556980034fa94cff697dede8a6e28c54f9111dd9c8990d9278
-size 1070
-=======
 # Vale styles for testing QL documentation
 
 The styles stored in these subdirectories are used by the [Vale](https://github.com/errata-ai/vale) application.
@@ -24,4 +19,3 @@ To upgrade the Microsoft styles:
 1. Update the `Semmle` version of the rule of the same name with those changes.
 1. Commit your changes and test the new versions of the rules.
 1. Open a pull request.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

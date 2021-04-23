@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ccf234dac5d865a9f5bed9a2c25f80f57a86e217c16a1e0ac3170f155ffb37c
-size 2287
-=======
 :tocdepth: 1
 
 .. _exploring-the-structure-of-your-source-code:
@@ -42,4 +37,3 @@ Viewing the abstract syntax tree of a source file
       :alt: Explore the AST
 
 You can click a node in the AST viewer to jump to it in the source code. Conversely, if you click a section of the source code, the AST viewer displays the corresponding node.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

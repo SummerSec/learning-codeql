@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9de282daa78fe03b7819b8e8db6dc6401bd3a58f1b866de0c452a0e9d06604a7
-size 3491
-=======
 # CodeQL queries[¶](https://codeql.github.com/docs/writing-codeql-queries/codeql-queries/#codeql-queries)
 
 
@@ -42,4 +37,3 @@ CodeQL queries are used in code scanning analyses to find problems in source cod
 * [Troubleshooting query performance](https://codeql.github.com/docs/writing-codeql-queries/troubleshooting-query-performance/): Improve the performance of your CodeQL queries by following a few simple guidelines.
 
     > 解决查询性能问题。通过遵循一些简单的准则来提高CodeQL查询的性能。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e433a5ae1fe3fececf28b38aabea16c836b11337308e48828a56044a519b0074
-size 34144
-=======
 # Using the shared data-flow library
 
 This document is aimed towards language maintainers and contains implementation
@@ -458,4 +453,3 @@ The class `BarrierGuard` must be defined. See https://github.com/github/codeql/p
 The file `dataflow/internal/DataFlowImplConsistency.qll` contains a number of consistency checks to verify that the language-specific parts satisfy the invariants that are expected by the shared implementation. Run these queries to check for inconsistencies.
 
 > 文件`dataflow/internal/DataFlowImplConsistency.qll`包含一些一致性检查，以验证语言特定部分是否满足共享实现所期望的不变性。运行这些查询来检查不一致的地方。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

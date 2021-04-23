@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9060b7aad2b53a77e9dffdd54f9476e39587476eb43b99afa93742a627c6f2e1
-size 2756
-=======
 :tocdepth: 1
 
 .. _customizing-settings:
@@ -68,4 +63,3 @@ Further reading
 
 - `User and workspace settings <https://code.visualstudio.com/docs/getstarted/settings>`__ in the Visual Studio Code help
 - ":ref:`CodeQL CLI <codeql-cli>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

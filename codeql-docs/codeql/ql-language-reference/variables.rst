@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a7cf691148176d940efbb4fcb4c2138372d54d64566642c7854cd568cb453b24
-size 5746
-=======
 :tocdepth: 1
 
 .. index:: variable
@@ -142,4 +137,3 @@ For more information about how assignments to free variables are computed, see "
        For example, and ``a = a`` is always true (known as a 
        `tautology <https://en.wikipedia.org/wiki/Tautology_(logic)>`_), and ``x and not x`` is
        always false.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f811043642c0fb7f7c3d675db6abf8d1c1a17115383642c79098d799e1221f0
-size 7367
-=======
 # Query classification and display
 
 ## Attributable Queries
@@ -168,4 +163,3 @@ config, and "disabled" by removing them from the query pack.
 > 自定义查询包（in-repo或site-wide）的查询总是运行在
 > 并默认显示。它们可以通过编辑项目的
 > 配置，并通过从查询包中删除 "禁用"。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

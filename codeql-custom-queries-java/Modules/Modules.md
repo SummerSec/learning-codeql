@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:bc89ec9199a118645663e899ff20e127dd7f87926fb0b06db6cf83b7b7f420d3
-size 11222
-=======
 ## Modules[¶](https://codeql.github.com/docs/ql-language-reference/modules/#modules)模块
 
 Modules provide a way of organizing QL code by grouping together related types, predicates, and other modules.
@@ -213,4 +208,3 @@ The `<module_expression>` itself can be a module name, a selection, or a qualifi
 For information about how import statements are looked up, see “[Module resolution](https://codeql.github.com/docs/ql-language-reference/ql-language-specification/#module-resolution)” in the QL language specification.
 
 > 关于如何查询导入语句的信息，请参见QL语言规范中的 "模块解析"。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

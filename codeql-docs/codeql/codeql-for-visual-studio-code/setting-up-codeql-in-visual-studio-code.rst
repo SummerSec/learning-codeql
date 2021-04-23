@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d7af10c6592720b091fa91297aa99fcc3763c388938420e585fd138afd1154f
-size 7648
-=======
 :tocdepth: 1
 
 .. _setting-up-codeql-in-visual-studio-code:
@@ -128,4 +123,3 @@ Further reading
 
 * ":doc:`Analyzing your projects <analyzing-your-projects>`"
 * ":ref:`CodeQL CLI <codeql-cli>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

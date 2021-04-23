@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4fbd55325cd387c1af41d5bf8348999a7fe938b4ae607b5d561eb0ec4c7c8ca
-size 24161
-=======
 .. _data-flow-cheat-sheet-for-javascript:
 
 Data flow cheat sheet for JavaScript
@@ -232,4 +227,3 @@ Further reading
 
 .. include:: ../reusables/javascript-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

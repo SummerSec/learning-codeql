@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:3dd72128d1b4751e4c38fe571f73e0974570429f8e942e4f8567f0f79585a0d8
-size 12398
-=======
 # Troubleshooting query performance[¶](https://codeql.github.com/docs/writing-codeql-queries/troubleshooting-query-performance/#troubleshooting-query-performance)
 
 Improve the performance of your CodeQL queries by following a few simple guidelines.
@@ -206,4 +201,3 @@ Now the structure we want is clearer. We’ve separated out the easy part into i
 
 * “[QL language reference](https://codeql.github.com/docs/ql-language-reference/#ql-language-reference)”
 * “[CodeQL tools](https://codeql.github.com/docs/codeql-overview/codeql-tools/#codeql-tools)”
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

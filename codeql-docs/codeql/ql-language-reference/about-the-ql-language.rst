@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:222dc5a9df14550e1484e106ee7904b4c620ac43d4b5fdf37e60ce6bc8102312
-size 5665
-=======
 :tocdepth: 1
 
 .. _about-the-ql-language:
@@ -75,4 +70,3 @@ Further reading
 -  `Logic Programming and Databases book <https://doi.org/10.1007/978-3-642-83952-8>`__
 -  `Foundations of Databases <http://webdam.inria.fr/Alice/>`__
 -  `Datalog <https://en.wikipedia.org/wiki/Datalog>`__
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

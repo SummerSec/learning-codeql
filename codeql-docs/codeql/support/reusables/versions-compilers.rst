@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:09f5b3b9e401568fe11566bdeba55337f37faf220be2d7125cab29e82549682c
-size 1770
-=======
 .. csv-table::
    :header-rows: 1
    :widths: auto
@@ -35,4 +30,3 @@ size 1770
     .. [4] ECJ is supported when the build invokes it via the Maven Compiler plugin or the Takari Lifecycle plugin.
     .. [5] JSX and Flow code, YAML, JSON, HTML, and XML files may also be analyzed with JavaScript files. 
     .. [6] TypeScript analysis is performed by running the JavaScript extractor with TypeScript enabled. This is the default for LGTM.   
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

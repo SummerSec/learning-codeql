@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:94f588d241ee9011d4c7ebeb00e4ef633802f60044b7ea4d0e30fcbaf2a342d6
-size 9679
-=======
 ================================
 Introduction to variant analysis 
 ================================
@@ -210,4 +205,3 @@ Model answer: redundant if-statement
 .. note::
 
   You can explore the results generated when this query is run on apache/struts in LGTM `here <https://lgtm.com/query/1269550358355690774/>`__.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

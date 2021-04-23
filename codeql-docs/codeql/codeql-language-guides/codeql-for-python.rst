@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc76dd8e32869c36f472e3d2e00f310404bb35f7ed794ff8360d92a0f025ed44
-size 2006
-=======
 .. _codeql-for-python:
 
 CodeQL for Python
@@ -34,4 +29,3 @@ Experiment and learn how to write effective and efficient queries for CodeQL dat
 -  :doc:`Pointer analysis and type inference in Python <pointer-analysis-and-type-inference-in-python>`: At runtime, each Python expression has a value with an associated type. You can learn how an expression behaves at runtime by using type-inference classes from the standard CodeQL library.
 
 -  :doc:`Analyzing data flow and tracking tainted data in Python <analyzing-data-flow-and-tracking-tainted-data-in-python>`: You can use CodeQL to track the flow of data through a Python program. Tracking user-controlled, or tainted, data is a key technique for security researchers.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

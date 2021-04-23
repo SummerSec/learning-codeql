@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:cad2f121271dec58aac56d9a4ddd52f70328b145f4073a8abc30b622020a45ed
-size 12443
-=======
 .. _analyzing-data-flow-in-java:
 
 Analyzing data flow in Java
@@ -370,4 +365,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

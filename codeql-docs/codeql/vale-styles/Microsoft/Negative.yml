@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b094fd6baeb6ea69d43272002164489ee113ab4c12636642aa48b63121e8f25
-size 191
-=======
 extends: existence
 message: Form a negative number with an en dash, not a hyphen.
 link: https://docs.microsoft.com/en-us/style-guide/numbers
@@ -10,4 +5,3 @@ nonword: true
 level: error
 tokens:
   - '\s-\d+\s'
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

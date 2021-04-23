@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:43dbe41b8fb246bcb24d79db02c6d265c41d668098fbf678e4f18fd2c4248113
-size 1815
-=======
 extends: substitution
 message: Consider using '%s' instead of '%s'.
 ignorecase: true
@@ -47,4 +42,3 @@ swap:
   woman doctor:                doctor
   woman scientist[s]?:         scientist(s)
   work(?:m[ae]n|wom[ae]n):     worker(s)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

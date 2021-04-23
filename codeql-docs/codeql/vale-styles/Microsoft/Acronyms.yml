@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:186fafa622fb62a311b5dba21c019059677611ce28408b2e5d30fa460a2d79d6
-size 797
-=======
 extends: conditional
 message: "'%s' has no definition."
 link: 'https://docs.microsoft.com/en-us/style-guide/acronyms'
@@ -67,4 +62,3 @@ exceptions:
   - XSS
   - YAML
   - ZIP
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

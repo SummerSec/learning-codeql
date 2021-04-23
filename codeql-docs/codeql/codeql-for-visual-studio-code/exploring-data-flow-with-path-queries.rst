@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac847ba4ac4399a4d0ad506ebcf3e249cb2915d1cf34009270e201a063a4c000
-size 2269
-=======
 :tocdepth: 1
 
 .. _exploring-data-flow-with-path-queries:
@@ -40,4 +35,3 @@ Further reading
 
 - ":ref:`About data flow analysis <about-data-flow-analysis>`"
 - ":ref:`Creating path queries <creating-path-queries>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:03ae0f27f53fa65ff63aa591665dcbcfdaebd33eadb7d51716479a00dba47222
-size 9449
-=======
 # Defining the results of a query
 
 You can control how analysis results are displayed in source code by modifying a query’s `select` statement.
@@ -145,4 +140,3 @@ The new elements added here don’t need to be clickable, so we added them direc
 ## Further reading
 
 * [CodeQL repository](https://github.com/github/codeql)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

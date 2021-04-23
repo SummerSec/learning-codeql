@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4affc64e35e048e88629818387b4196d798f9dcfa394d0605893a5f0215dae12
-size 7013
-=======
 # Metadata for CodeQL queries[¶](https://codeql.github.com/docs/writing-codeql-queries/metadata-for-codeql-queries/#metadata-for-codeql-queries)
 
 Metadata tells users important information about CodeQL queries. You must include the correct query metadata in a query to be able to view query results in source code.
@@ -52,4 +47,3 @@ Here is the metadata for one of the standard Java queries:
 For more examples of query metadata, see the standard CodeQL queries in our [GitHub repository](https://github.com/github/codeql).
 
 > 关于查询元数据的更多例子，请参见我们GitHub仓库中的标准CodeQL查询。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

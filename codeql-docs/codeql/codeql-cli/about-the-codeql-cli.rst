@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:883c67707cd59dd0fc85235b72295270fd0cce6fc135cea78f9bc37e9880ba6e
-size 994
-=======
 .. _about-the-codeql-cli:
 
 About the CodeQL CLI
@@ -32,4 +27,3 @@ command line. To run a command, use::
 
 To view the reference documentation for a command, add the ``--help`` flag, or visit the 
 "`CodeQL CLI manual <../manual>`__."
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

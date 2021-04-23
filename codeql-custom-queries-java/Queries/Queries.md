@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e31fad0c5091fdcf945e66e67174519ed5ad87b0cad1d9b7f662a4a47df59de1
-size 4451
-=======
 ## Queries -- 查询
 
 Queries are the output of a QL program. They evaluate to sets of results.
@@ -117,4 +112,3 @@ class MultipleOfThree extends int {
 ```
 
 ![image-20210314145749808](https://gitee.com/samny/images/raw/master//49u57er49ec/49u57er49ec.png)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

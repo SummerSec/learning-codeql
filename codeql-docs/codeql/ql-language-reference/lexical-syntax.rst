@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa6ecb3da64186244ae11c4d2b802d706f6df11733f35b39a80230efc0ba11f8
-size 1085
-=======
 :tocdepth: 1
 
 .. _lexical-syntax:
@@ -43,4 +38,3 @@ The following example uses these three different kinds of comments:
       A standard multiline comment, perhaps to provide 
       additional details, or to write a TODO comment.
     */
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

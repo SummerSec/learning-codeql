@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb4790f9f624deb0de1e867ec1ef6378bf072ff828319c6544e8418bfd0b52a8
-size 3789
-=======
 # -*- coding: utf-8 -*-
 #
 # The Sphinx config values used in the CodeQL documentation that is published
@@ -109,4 +104,3 @@ html_favicon = 'images/site/favicon.ico'
 
 # Exclude these paths from being built by Sphinx
 exclude_patterns = ['vale*', '_static', '_templates', 'reusables', 'images', 'support', 'ql-training', 'query-help', '_build', '*.py*', 'README.rst']
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

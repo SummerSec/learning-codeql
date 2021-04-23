@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:2736e4dbc67eb32d2d1f9d35ec038d20f8eed0dea6bc20fdb446f1ffdfe4c8cf
-size 4410
-=======
 # -*- coding: utf-8 -*-
 #
 # CodeQL training slides build configuration file
@@ -128,4 +123,3 @@ html_theme_options = {'font_size': '16px',
 exclude_patterns = ['slide-snippets']
 
 ##############################################################################
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

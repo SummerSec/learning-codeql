@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4edb5b647759f10bd1bb5310037aabf41a0823dae8f718dfb07f6191b7c7e79a
-size 3442
-=======
 extends: substitution
 message: 'Consider using "%s" instead of "%s".'
 link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences
@@ -123,4 +118,3 @@ swap:
   with regard to: regarding
   with respect to: about or on
   with the exception of: except for
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

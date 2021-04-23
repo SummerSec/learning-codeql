@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:75493d08223529fc6d2f4a6fc7a75dd918f079dd2ceb975e5e9403badc6d4759
-size 20938
-=======
 .. _analyzing-data-flow-in-csharp:
 
 Analyzing data flow in C#
@@ -565,4 +560,3 @@ Further reading
 
 .. include:: ../reusables/csharp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b3694f768d354ebd98be077f95054a11d38c931ac64b9e76d2fd0e5d306430f
-size 4911
-=======
 .. Template for rst slide shows
 
 
@@ -174,4 +169,3 @@ Further details
 
 
 .. The final slide with the company details is generated automatically.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

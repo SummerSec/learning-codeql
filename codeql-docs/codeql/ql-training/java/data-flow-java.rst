@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c97b1ab9ee86ad03b2807109771334c029acc66ae83f0f7a1f4698d4482067b5
-size 5048
-=======
 =========================
 Introduction to data flow
 =========================
@@ -145,4 +140,3 @@ Beyond local data flow
 
 - Instead, let’s turn the problem around and find user-controlled data that flows into a ``printf`` format argument, potentially through calls.
 - This needs :doc:`global data flow <global-data-flow-java>`.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

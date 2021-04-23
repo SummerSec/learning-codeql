@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ff40df180b95ccd5725e89d4797ecd22470fce05ee7114babd7d8bd8f45315f
-size 2318
-=======
 Exercise: How not to do global data flow
 ========================================
 
@@ -70,4 +65,3 @@ Summary-based global data flow
 
 - Use this predicate in ``balancedPath`` instead of ``stepIn``/``stepOut`` pairs.
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

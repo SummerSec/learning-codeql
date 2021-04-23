@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3486e208518955189b3fe7977f2340eb8e9540fbc584508c4187bf97ff85b36
-size 383
-=======
 extends: existence
 message: "Verify your use of '%s' with the A-Z word list."
 link: 'https://docs.microsoft.com/en-us/style-guide/a-z-word-list-term-collections/a/abort-abortion'
@@ -24,4 +19,3 @@ tokens:
   - he
   - insure
   - she
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

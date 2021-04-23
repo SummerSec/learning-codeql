@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a3996e4b60788b7b9e3f5869c9a452e0f81be916c4620af16a393418e0966df0
-size 7813
-=======
 .. _navigating-the-call-graph:
 
 Navigating the call graph
@@ -173,4 +168,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

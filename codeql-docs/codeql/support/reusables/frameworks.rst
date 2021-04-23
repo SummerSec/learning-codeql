@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9677196e675708cc4bb3eb11b7500f6635485b691a1efb5f20fdb9830015edd3
-size 3598
-=======
 .. There is currently no built-in support for libraries or frameworks for C/C++.
 
 C# built-in support
@@ -143,4 +138,3 @@ Python built-in support
    Turbogears, Web framework
    Twisted, Networking engine
    WebOb, WSGI request library
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

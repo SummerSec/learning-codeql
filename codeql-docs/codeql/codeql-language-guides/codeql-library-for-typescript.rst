@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8185eec9634c636132eb20c4035d6e8bb09a752bafbd0fb0906b5d08c34fdb9
-size 38186
-=======
 .. _codeql-library-for-typescript:
 
 CodeQL library for TypeScript
@@ -452,4 +447,3 @@ Further reading
 
 .. include:: ../reusables/javascript-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

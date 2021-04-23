@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:83e55cb63ce211148f4eecc9c7ee44a1c5a5e039ffb4c2f06649c1b256780433
-size 2716
-=======
 Information flow
 ================
 
@@ -54,4 +49,3 @@ The ``semmle.code.<language>.dataflow.TaintTracking`` library provides a framewo
 .. note::
 
   In addition to the taint tracking configuration described here, there is also an equivalent *data flow* configuration in ``semmle.code.<language>.dataflow.DataFlow``, ``DataFlow::Configuration``. Data flow configurations are used to track whether the exact value produced by a source is used by a sink, whereas taint tracking configurations are used to determine whether the source may influence the value used at the sink. Whether you use taint tracking or data flow depends on the analysis problem you are trying to solve.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

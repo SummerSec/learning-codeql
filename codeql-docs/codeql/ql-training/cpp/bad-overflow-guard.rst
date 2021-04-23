@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c70a6fe2e256ede138f46387c44655b6e2d9a339c141dd848fa25d42e5045d2
-size 9239
-=======
 ===========================
 Example: Bad overflow guard
 ===========================
@@ -235,4 +230,3 @@ The final query
    :language: ql
 
 This query finds a single result in our historic database, which was `a genuine bug in ChakraCore <https://github.com/Microsoft/ChakraCore/commit/2500e1cdc12cb35af73d5c8c9b85656aba6bab4d>`__.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

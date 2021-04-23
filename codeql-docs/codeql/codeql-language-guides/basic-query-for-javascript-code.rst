@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0f2231b5782dc491ee5353fc5b3a67abf09f009eb28bb78436c7edf676ba6ea
-size 10831
-=======
 .. _basic-query-for-javascript-code:
 
 Basic query for JavaScript code
@@ -141,4 +136,3 @@ Further reading
 
 .. include:: ../reusables/javascript-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c38ff424f555ef56e121b7b010a04b79cf0ef41272a5a8d5743aaa6b5cfc84b6
-size 18316
-=======
 # Javadoc[¶](https://codeql.github.com/docs/codeql-language-guides/javadoc/#javadoc)
 
 You can use CodeQL to find errors in Javadoc comments in Java code.
@@ -378,4 +373,3 @@ select tt, "Spurious @throws tag."
 Currently, `visibleIn` only considers single-type imports, but you could extend it with support for other kinds of imports.
 
 > 目前，visibleIn只考虑单一类型的导入，但你可以扩展它，支持其他类型的导入。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

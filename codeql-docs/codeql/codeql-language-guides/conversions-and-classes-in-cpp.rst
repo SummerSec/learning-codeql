@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:55d2a57d975a2e72dbe17b6a1beb3c55dfe348a00eeb3776315466a67ca954e7
-size 8094
-=======
 .. _conversions-and-classes-in-cpp:
 
 Conversions and classes in C and C++
@@ -232,4 +227,3 @@ Further reading
 
 .. include:: ../reusables/cpp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

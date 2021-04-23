@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b79373d3fb76e3a6968615c8c58ffd38421080bb08eb2af6f48b22a1794c75bc
-size 3094
-=======
 :tocdepth: 1
 
 .. _troubleshooting-codeql-for-visual-studio-code:
@@ -53,4 +48,3 @@ Generating a bug report for GitHub
 --------------------------------------
 
 The CodeQL Language Server contains more advanced debug logs for CodeQL language maintainers. You should only need these to provide details in a bug report.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

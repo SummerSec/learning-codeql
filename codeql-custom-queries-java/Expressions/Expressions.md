@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee9b091ae9a119b1be784a24d5a0e0b527fda3998f57984e7851839964baab61
-size 46853
-=======
 # Expressions[¶](https://codeql.github.com/docs/ql-language-reference/expressions/#expressions)表达式
 
 An expression evaluates to a set of values and has a type.
@@ -749,4 +744,3 @@ select s
 The `charAt(int i)` predicate is defined on strings and usually takes an `int` argument. Here the don’t care expression `_` is used to tell the query to select characters at every possible index. The query returns the values `h`, `e`, `l`, and `o`.
 
 > charAt(int i) 谓词定义在字符串上，通常取一个int参数。这里使用了don't care表达式_来告诉查询在每个可能的索引中选择字符。查询返回的值是h、e、l和o。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

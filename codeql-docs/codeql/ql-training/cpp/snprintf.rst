@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7d26ddea4b0ab766db7444189aa87b0bfaf85dafbbe37984e1f39724cfce4c9
-size 3013
-=======
 ===============================
 Exercise: ``snprintf`` overflow
 ===============================
@@ -104,4 +99,3 @@ Model answer
 .. note::
 
   The regular expression for matching the format string uses the “(?s)” directive to ensure that “.” also matches any newline characters embedded in the string.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

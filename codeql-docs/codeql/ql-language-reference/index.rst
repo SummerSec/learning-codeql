@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b341c5583fa8c711bd390502cccd986bf7e50350ebcc619bc32b5f47c3122562
-size 2415
-=======
 .. _ql-language-reference:
 
 QL language reference
@@ -59,4 +54,3 @@ Learn all about QL, the powerful query language that underlies the code scanning
    name-resolution
    evaluation-of-ql-programs
    ql-language-specification
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

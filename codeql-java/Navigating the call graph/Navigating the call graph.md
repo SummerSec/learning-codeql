@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc676ec43c6b4bff99f352b81273d3741b48399967e387ae18deec8f0ef97287
-size 13264
-=======
 # Navigating the call graph[¶](https://codeql.github.com/docs/codeql-language-guides/navigating-the-call-graph/#navigating-the-call-graph)
 
 CodeQL has classes for identifying code that calls other code, and code that can be called from elsewhere. This allows you to find, for example, methods that are never used.
@@ -245,4 +240,3 @@ select callee, "Not called."
 ![image-20210325165551041](https://gitee.com/samny/images/raw/master/51u55er51ec/51u55er51ec.png)
 
 ![image-20210325165616137](https://gitee.com/samny/images/raw/master/16u56er16ec/16u56er16ec.png)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

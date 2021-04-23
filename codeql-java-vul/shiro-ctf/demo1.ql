@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:792b068ba86f0c909089f5991977704c98a429649651be4a9dbca5683852b013
-size 1407
-=======
 /**
  * @name Unsafe shiro deserialization
  * @kind path-problem
@@ -66,4 +61,3 @@ class ShiroUnsafeDeserializationConfig extends DataFlow::Configuration {
 from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
 where config.hasFlowPath(source, sink)
 select sink, source, sink, "Unsafe Shiro deserialization"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

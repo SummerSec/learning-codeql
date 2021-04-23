@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:87965776b6f5accca162d591f580b0987c88f31f7606cc397796d2c9eb3b2519
-size 169
-=======
 digraph cfg {
     graph [dpi=300];
     rankdir=LR;
@@ -11,4 +6,3 @@ digraph cfg {
     "p != nil" -> "return x";
     "x = p.f" -> "return x";
 }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

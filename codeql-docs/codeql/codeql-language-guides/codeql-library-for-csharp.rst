@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f0d76c8b43e78ab0537b79ce42f4d4daedf207137d3281940beb7ad888ec730
-size 36001
-=======
 .. _codeql-library-for-csharp:
 
 CodeQL library for C#
@@ -1131,4 +1126,3 @@ Further reading
 
 .. include:: ../reusables/csharp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

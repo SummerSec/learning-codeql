@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8d0871bd325a3a7545ccdb8f4dcc9b0ec21bb69c36fb45f09ddb8185da7e3fb
-size 7934
-=======
 ## Aliases[¶](https://codeql.github.com/docs/ql-language-reference/aliases/#aliases)
 
 An alias is an alternative name for an existing QL entity.
@@ -197,4 +192,3 @@ select i
 
 ![image-20210316162008023](https://gitee.com/samny/images/raw/master/8u20er8ec/8u20er8ec.png)
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

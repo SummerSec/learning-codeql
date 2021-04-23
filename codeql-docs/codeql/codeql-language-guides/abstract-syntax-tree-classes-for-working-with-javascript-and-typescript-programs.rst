@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:899e8d4a4f2def48166a369fdd38a9d2a18fe5e3820c8ea1b731dabf71f6e36f
-size 64193
-=======
 .. _abstract-syntax-tree-classes-for-working-with-javascript-and-typescript-programs:
 
 Abstract syntax tree classes for working with JavaScript and TypeScript programs
@@ -529,4 +524,3 @@ Further reading
 .. _AwaitExpr: https://codeql.github.com/codeql-standard-libraries/javascript/semmle/javascript/Expr.qll/type.Expr$AwaitExpr.html
 .. _YieldExpr: https://codeql.github.com/codeql-standard-libraries/javascript/semmle/javascript/Expr.qll/type.Expr$YieldExpr.html
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

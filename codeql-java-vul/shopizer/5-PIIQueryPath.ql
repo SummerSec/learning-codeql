@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f03dfacd3519173c4fbe26719690e95ee3fc87335b950d4dc898a604bfae461
-size 1080
-=======
 /**
  *@name PIIQueryPath
  *@kind path-problem
@@ -41,4 +36,3 @@ class MySenInfoTaintConfig extends TaintTracking::Configuration{
 from MySenInfoTaintConfig config, DataFlow::PathNode source, DataFlow::PathNode sink
 where config.hasFlowPath(source, sink)
 select sink, source, sink, "PII data from field $@ is written to long here", source, source.getNode().toString()
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

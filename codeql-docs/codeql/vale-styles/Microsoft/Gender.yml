@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:505620a20898cf3424d07bd446330789b050026deaa9ecc382e33719048bfa6e
-size 234
-=======
 extends: existence
 message: Don’t use '%s'.
 link: https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/grammar/nouns-pronouns.md#pronouns-and-gender
@@ -11,4 +6,3 @@ ignorecase: true
 tokens:
   - he/she
   - s/he
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

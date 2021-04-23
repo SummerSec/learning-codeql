@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:19cade033f78235ca3b7f528f07ba7222e4bbdeeb6d20363c2ea582bb395fdb3
-size 4854
-=======
 =======================
 Exercise: Apache Struts
 =======================
@@ -140,4 +135,3 @@ Model answer, step 4
    select sink.getNode().(UnsafeDeserializationSink).getMethodAccess(), source, sink, "Unsafe    deserialization of $@.", source, "user input"
 
 More full-featured version: https://github.com/github/security-lab/tree/main/CodeQL_Queries/java/Apache_Struts_CVE-2017-9805
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

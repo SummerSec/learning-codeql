@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c9b589fa78d44a57506bcbd7826fed3e8406851f96a708be02b62d2cf30999c4
-size 2322
-=======
 .. _exit-codes:
 
 Exit codes
@@ -77,4 +72,3 @@ Other
 
 In the case of really severe problems within the JVM that runs ``codeql``, it might return a nonzero exit code of its own choosing.
 This should only happen if something is severely wrong with the CodeQL installation.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

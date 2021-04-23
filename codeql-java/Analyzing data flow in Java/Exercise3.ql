@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f847eab084d59b996c07d71211659d60fb754560376cc9fccdd3dbcdc99a28f8
-size 962
-=======
 import semmle.code.java.dataflow.DataFlow
 
 class GetenvSource extends DataFlow::ExprNode {
@@ -34,4 +29,3 @@ class GetenvToURLConfiguration extends DataFlow::Configuration {
 from DataFlow::Node src, DataFlow::Node sink, GetenvToURLConfiguration config
 where config.hasFlow(src, sink)
 select src, "This environment variable constructs a URL $@.", sink, "here"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a413cd98cb0a05bf9634dbf8669f732ea049f6e16a6b145bf22515473abaa125
-size 3961
-=======
 # CodeQL for Java[¶](https://codeql.github.com/docs/codeql-language-guides/codeql-for-java/#codeql-for-java)
 
 Experiment and learn how to write effective and efficient queries for CodeQL databases generated from Java codebases.
@@ -48,4 +43,3 @@ Experiment and learn how to write effective and efficient queries for CodeQL dat
 * [Abstract syntax tree classes for working with Java programs](https://codeql.github.com/docs/codeql-language-guides/abstract-syntax-tree-classes-for-working-with-java-programs/): CodeQL has a large selection of classes for representing the abstract syntax tree of Java programs.
 
     > 用于处理Java程序的抽象语法树类。CodeQL有大量的类用于表示Java程序的抽象语法树。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:69354aa756ebae15c686fcf98d1c352ff33d2d8450cff19745d679a43d8ae1a3
-size 9917
-=======
 .. _pointer-analysis-and-type-inference-in-python:
 
 Pointer analysis and type inference in Python
@@ -236,4 +231,3 @@ Further reading
 .. include:: ../reusables/python-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

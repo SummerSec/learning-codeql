@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffb202441f122c54f2f04c595a79954e96fd0d4794222d633179a7544a9c8c51
-size 2783
-=======
 .. _codeql-for-cpp:
 
 CodeQL for C and C++
@@ -47,4 +42,3 @@ Experiment and learn how to write effective and efficient queries for CodeQL dat
 -  :doc:`Using range analysis for C and C++ <using-range-analsis-in-cpp>`: You can use range analysis to determine the upper or lower bounds on an expression, or whether an expression could potentially over or underflow.
 
 -  :doc:`Hash consing and value numbering <hash-consing-and-value-numbering>`: You can use specialized CodeQL libraries to recognize expressions that are syntactically identical or compute the same value at runtime in C and C++ codebases.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

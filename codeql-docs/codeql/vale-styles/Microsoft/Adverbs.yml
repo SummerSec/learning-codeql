@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:614e167e1de20f027c1c82c982817412e7967cc6341531799809851552d368fb
-size 3816
-=======
 extends: existence
 message: "Consider removing '%s'."
 link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-simple-words-concise-sentences
@@ -271,4 +266,3 @@ tokens:
   - zealously
   - zestfully
   - zestily
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

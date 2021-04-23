@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab3c3b2470da6d72a3a01a6b7dcc79a465a1c63a075283e7de1d4dc0c598fb89
-size 13868
-=======
 :tocdepth: 1
 
 .. _formulas:
@@ -437,4 +432,3 @@ The following query selects any ``SmallInt`` that is odd, or a multiple of ``4``
        
        This is equivalent to ``forall( a, b | a in A and b in B | a != b )``, which is very
        different from the first formula.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

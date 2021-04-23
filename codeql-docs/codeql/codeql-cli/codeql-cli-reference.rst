@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e235e605403501fb1d6213b9b33798db1b4fa248e49eabe15b923713bbbf04d0
-size 1204
-=======
 .. _codeql-cli-reference:
 
 CodeQL CLI reference
@@ -34,4 +29,3 @@ CodeQL CLI manual
 
 To view detailed information about each CodeQL CLI command,
 including its usage and options, add the ``--help`` flag or visit the "`CodeQL CLI manual <../manual>`__."
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

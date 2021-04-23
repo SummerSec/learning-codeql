@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eb3bd74ffb2e800fcf6609ebbb6fc0ac0b7e48ba5b097583161ce0373ed212b
-size 11489
-=======
 .. _creating-codeql-query-suites:
 
 Creating CodeQL query suites
@@ -288,4 +283,3 @@ Further reading
 ---------------
 
 - ":ref:`CodeQL queries <codeql-queries>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

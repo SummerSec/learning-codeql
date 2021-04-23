@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:caed122fd46e27149e939af6f84e6648519891ae3d2b653e96fb3aa97b4e853f
-size 5193
-=======
 .. _modeling-data-flow-in-go-libraries:
 
 Modeling data flow in Go libraries
@@ -127,4 +122,3 @@ This has the effect that any call to ``Print``, ``Printf``, or
 ``Println`` in the package ``fmt`` is recognized as a logger call.
 Any query that uses logger calls as a sink will then identify when tainted data 
 has been passed as an argument to ``Print``, ``Printf``, or ``Println``.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

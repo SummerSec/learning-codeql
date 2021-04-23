@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9a07ea312989d6894635d9149743a223f9efd4d12bab3441c7c9ebd11bb7baa
-size 20219
-=======
 .. _codeql-library-for-java:
 
 CodeQL library for Java
@@ -395,4 +390,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

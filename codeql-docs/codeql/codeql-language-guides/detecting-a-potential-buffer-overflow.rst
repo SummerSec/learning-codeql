@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b823f531f15747dcbebbbd09dcfc76113184ba1889df03f3c9ef549336480aa7
-size 9927
-=======
 .. _detecting-a-potential-buffer-overflow:
 
 Detecting a potential buffer overflow
@@ -233,4 +228,3 @@ Further reading
 
 .. include:: ../reusables/cpp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1885ff55703660a653dbecef7397d2c499d20ecfc23a8c048e92d2a2890cc692
-size 43138
-=======
 # Abstract syntax tree classes for working with Java programs[¶](https://codeql.github.com/docs/codeql-language-guides/abstract-syntax-tree-classes-for-working-with-java-programs/#abstract-syntax-tree-classes-for-working-with-java-programs)用于Java程序的抽象语法树类。
 
 CodeQL has a large selection of classes for representing the abstract syntax tree of Java programs.
@@ -176,4 +171,3 @@ A [VarAccess](https://codeql.github.com/codeql-standard-libraries/java/semmle/co
 | `new int[] { 23, 42 }`                                       |                                                              |                                                              |
 | `{ 23, 42 }`                                                 | [ArrayInit](https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Expr.qll/type.Expr$ArrayInit.html) | can only appear as an initializer or as a child of an [ArrayCreationExpr](https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Expr.qll/type.Expr$ArrayCreationExpr.html)只能作为初始化器或ArrayCreationExpr的子代出现。 |
 | `@Annot(key=val)`                                            | [Annotation](https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/Annotation.qll/type.Annotation$Annotation.html) |                                                              |
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

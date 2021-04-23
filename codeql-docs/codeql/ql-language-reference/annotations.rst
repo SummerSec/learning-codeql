@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:fa9d3c4924707ef45df3fe6cf33380bd8da322615c35981d8848442a9cccbd21
-size 14899
-=======
 :tocdepth: 1
 
 .. _annotations:
@@ -417,4 +412,3 @@ For more information, see ":ref:`predicate-binding`."
 .. |modules|                   replace:: :ref:`modules <modules>`
 .. |aliases|                   replace:: :ref:`aliases <aliases>`
 .. |algebraic datatypes|       replace:: :ref:`algebraic datatypes <algebraic-datatypes>`
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

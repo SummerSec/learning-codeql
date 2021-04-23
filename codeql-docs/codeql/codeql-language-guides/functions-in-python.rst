@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ee5040e4f637897577182edab78fb4ea59f2a42cda4c7583a635c430fa030c19
-size 4048
-=======
 .. _functions-in-python:
 
 Functions in Python
@@ -91,4 +86,3 @@ Further reading
 .. include:: ../reusables/python-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

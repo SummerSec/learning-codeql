@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1d81244f7fcd59b9b2aee865561f50b2dd60f087cc13fe053227a9dd6fe00b9
-size 18552
-=======
 # Query file metadata and alert message style guide
 
 ## Introduction
@@ -277,4 +272,3 @@ For examples of select clauses and alert messages, see the query source files at
 For further information on query writing, see [CodeQL queries](https://help.semmle.com/QL/learn-ql/ql/writing-queries/writing-queries.html). For more information on learning CodeQL, see [Learning CodeQL](https://help.semmle.com/QL/learn-ql/index.html).
 
 > 关于查询编写的更多信息，请参见[CodeQL查询](https://help.semmle.com/QL/learn-ql/ql/writing-queries/writing-queries.html)。关于学习CodeQL的更多信息，请参见[学习CodeQL](https://help.semmle.com/QL/learn-ql/index.html)。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

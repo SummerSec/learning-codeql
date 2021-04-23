@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0949896d23397debe65ab451b83e0add189bfb39afbf5f17f84629d4ee85f368
-size 26954
-=======
 .. _query-help-files:
 
 Query help files
@@ -213,4 +208,3 @@ The included file, `ThreadUnsafeICryptoTransformOverview.qhelp <https://github.c
       </fragment>
    </qhelp>
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

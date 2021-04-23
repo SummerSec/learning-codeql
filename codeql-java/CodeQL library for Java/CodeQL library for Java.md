@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:09c430ba7ae94a8f55aefd8a7d957594c0bb73e3da190efbbbfcdced503d682a
-size 36089
-=======
 # CodeQL library for Java[¶](https://codeql.github.com/docs/codeql-language-guides/codeql-library-for-java/#codeql-library-for-java)
 
 When you’re analyzing a Java program, you can make use of the large collection of classes in the CodeQL library for Java.
@@ -707,4 +702,3 @@ For more information about callables and calls, see the [article on the call gra
 
 * “[QL language reference](https://codeql.github.com/docs/ql-language-reference/#ql-language-reference)”
 * “[CodeQL tools](https://codeql.github.com/docs/codeql-overview/codeql-tools/#codeql-tools)”
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

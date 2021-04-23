@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3fa75ba87183ab03d53edc88813e828ab6c0baadab6d9e029a4353f1442d467
-size 576
-=======
 extends: substitution
 message: 'Use "%s" instead of "%s".'
 link: https://docs.microsoft.com/en-us/style-guide/word-choice/use-contractions
@@ -31,4 +26,3 @@ swap:
   when is: when's
   where is: where's
   will not: won't
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

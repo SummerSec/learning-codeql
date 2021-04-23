@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:86875bd53f11cad921fd5f3c4050b6b31b4d88084526d42669a9854ac2529c38
-size 8087
-=======
 =========================
 Introduction to data flow
 =========================
@@ -198,4 +193,3 @@ Beyond local data flow
 - Dealing with parameter passing becomes cumbersome.
 - Instead, let’s turn the problem around and find user-controlled data that flows into a ``printf`` format argument, potentially through calls.
 - This needs :doc:`global data flow <global-data-flow-cpp>`.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

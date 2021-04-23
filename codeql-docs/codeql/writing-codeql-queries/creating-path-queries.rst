@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e26a8236093b3acacff5eb0abc95f462a203b686340b56489c8dba2994917161
-size 12225
-=======
 .. _creating-path-queries:
 
 Creating path queries
@@ -214,4 +209,3 @@ Further reading
 - ":ref:`Exploring data flow with path queries <exploring-data-flow-with-path-queries>`"
 
 - `CodeQL repository <https://github.com/github/codeql>`__
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

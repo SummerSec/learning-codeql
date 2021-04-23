@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b4d5826b4df2b40602bf93f47a2f1f3e46d164f905811eaee82c938da4f93d8
-size 183
-=======
 extends: existence
 message: Don’t add -ly to an ordinal number.
 link: https://docs.microsoft.com/en-us/style-guide/numbers
@@ -11,4 +6,3 @@ tokens:
   - firstly
   - secondly
   - thirdly
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

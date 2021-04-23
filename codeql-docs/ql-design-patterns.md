@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:9ca8194148e7cd82bc512b5c209dd8449aec15acc79919515b1a798f11ba94b9
-size 12431
-=======
 # CodeQL Design Patterns
 
 A list of design patterns you are recommended to follow.
@@ -173,4 +168,3 @@ Instead, the `BinaryExpr` class should be non-`abstract`, and we have the follow
 - Add a characteristic predicate of `BinaryExpr() { this instanceof PlusExpr or this instanceof MinusExpr or ... }`.
 
     > - 增加一个`BinaryExpr() { this instanceof PlusExpr or this instanceof MinusExpr or ... 的特性谓词。}`.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

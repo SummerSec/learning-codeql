@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f71472557f2286114254974b205b745f976e61b61fccbf5aba5b24b0ebb5ea54
-size 10538
-=======
 .. _about-codeql-queries:
 
 About CodeQL queries
@@ -141,4 +136,3 @@ Query help files
 ****************
 
 When you write a custom query, we also recommend that you write a query help file to explain the purpose of the query to other users. For more information, see the `Query help style guide <https://github.com/github/codeql/blob/main/docs/query-help-style-guide.md>`__ on GitHub, and the ":doc:`Query help files <query-help-files>`." 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

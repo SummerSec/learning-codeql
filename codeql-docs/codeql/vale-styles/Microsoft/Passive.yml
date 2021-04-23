@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6735ca9ebda4123407a02ef55cb370d1850026e6a37bfa4218d9927ebad57b9c
-size 1940
-=======
 extends: existence
 message: "'%s' looks like passive voice."
 ignorecase: true
@@ -186,4 +181,3 @@ tokens:
   - woven
   - written
   - wrung
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

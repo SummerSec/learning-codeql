@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:5c3d15fb8b4921184c9a28b79592508631bcacd3c8478553f441a8ac8ffd6c47
-size 124184
-=======
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -165,4 +160,3 @@ size 124184
     </g>
   </g>
 </svg>
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

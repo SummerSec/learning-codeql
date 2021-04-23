@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f0a9d55e151eaf8a635a81a03649db44205efc252f78abc6f75be32ed190bcc
-size 6074
-=======
 .. _defining-the-results-of-a-query:
 
 Defining the results of a query
@@ -117,4 +112,3 @@ Further reading
 ---------------
 
 - `CodeQL repository <https://github.com/github/codeql>`__
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

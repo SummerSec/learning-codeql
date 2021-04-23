@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:196b44b269be5594a7694c44ca2caae49fa860ee0b9fa3d3dbed41d24a43457f
-size 10404
-=======
 .. _getting-started-with-the-codeql-cli:
 
 Getting started with the CodeQL CLI
@@ -238,4 +233,3 @@ recommended directory setup depends on which versions you want to install:
   ``$HOME/codeql-home/codeql-cli``, the older version should be
   unpacked into ``$HOME/codeql-older-version/old-codeql-cli``. Here, the common
   grandparent is the ``$HOME`` directory. 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

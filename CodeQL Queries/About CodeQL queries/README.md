@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6e03f019db83c832a112b2c169871aac961c77f8705aa474aba4b0f29d84e8a
-size 18260
-=======
 # About CodeQL queries[¶](https://codeql.github.com/docs/writing-codeql-queries/about-codeql-queries/#about-codeql-queries)
 
 CodeQL queries are used to analyze code for issues related to security, correctness, maintainability, and readability.
@@ -200,4 +195,3 @@ Query contributions to the open source GitHub repository may also have an accomp
 When you write a custom query, we also recommend that you write a query help file to explain the purpose of the query to other users. For more information, see the [Query help style guide](https://github.com/github/codeql/blob/main/docs/query-help-style-guide.md) on GitHub, and the “[Query help files](https://codeql.github.com/docs/writing-codeql-queries/query-help-files/).”
 
 > 当你写一个自定义查询时，我们还建议你写一个查询帮助文件，向其他用户解释查询的目的。有关更多信息，请参见 GitHub 上的查询帮助样式指南，以及 "查询帮助文件"。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:239805d53d2c080aba15227aa378605f6131f569870c0760f831e8691668ebb2
-size 5826
-=======
 .. _hash-consing-and-value-numbering:
 
 Hash consing and value numbering
@@ -123,4 +118,3 @@ Further reading
 
 .. include:: ../reusables/cpp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:176b5b6bdff4be9b69d2db56f444c7fa723ffa4710336f6ff32ea18131884b09
-size 5756
-=======
 ========================
 Example: Query injection
 ========================
@@ -147,4 +142,3 @@ Follow up
 - However, in general, the concatenation could occur before the method call.
 
 - For this, we would need to use :doc:`local data flow <data-flow-java>`, which is the topic of the next set of training slides.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

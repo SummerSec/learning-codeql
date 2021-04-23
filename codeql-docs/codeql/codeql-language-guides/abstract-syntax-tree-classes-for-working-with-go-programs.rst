@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:8505ee7c642ec656dfd3ca774986b28c6abd246be43da2f46fccadf9f871d6a4
-size 62003
-=======
 .. _abstract-syntax-tree-classes-for-working-with-go-programs:
 
 Abstract syntax tree classes for working with Go programs
@@ -522,4 +517,3 @@ Further reading
 .. _SendStmt: https://codeql.github.com/codeql-standard-libraries/go/semmle/go/Stmt.qll/type.Stmt$SendStmt.html
 .. _RecvStmt: https://codeql.github.com/codeql-standard-libraries/go/semmle/go/Stmt.qll/type.Stmt$RecvStmt.html
 .. _BadStmt: https://codeql.github.com/codeql-standard-libraries/go/semmle/go/Stmt.qll/type.Stmt$BadStmt.html
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:33e4912a9f9829946c6f1a460d6c4e7f20fa905c2f98053aa5af6d72daf3168c
-size 1830
-=======
 # CodeQL pre-commit-hook setup
 
 As stated in [CONTRIBUTING](../CONTRIBUTING.md) all CodeQL files must be formatted according to our [CodeQL style guide](ql-style-guide.md). You can use our pre-commit hook to avoid committing incorrectly formatted code. To use it, simply copy the [pre-commit](../misc/scripts/pre-commit) script to `.git/hooks/pre-commit` and make sure that:
@@ -30,4 +25,3 @@ ql/cpp/ql/src/printAst.ql would change by autoformatting.
 If you prefer to have the script automatically format the code (and not abort the commit), you can replace the line `codeql query format --check-only` with `codeql query format --in-place` (and `exit $exitVal` with `exit 0`).
 
 > 如果你想让脚本自动格式化代码(而不是中止提交)，你可以用 "codeql query format --in-place "替换 "codeql query format --check-only"(用 "exit 0 "替换 "exit $exitVal")。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6283a73f256d544a667943d3700b1cca3da35d0eef949dc5ddf9a0b2fbae36c5
-size 11066
-=======
 :tocdepth: 1
 
 .. _predicates:
@@ -338,4 +333,3 @@ first, second, and fourth columns of rows in that table.
 The only difference is that you can't define database predicates in QL. They are defined by the
 underlying database. Therefore, the available database predicates vary according to the 
 database that you are querying.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

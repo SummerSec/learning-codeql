@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:44147d4076d538d916583d197629fa11ceb427364bdb4cdec8a13dcdbacd4fd1
-size 1021
-=======
 CodeQL query help
 -----------------
 
@@ -36,4 +31,3 @@ View the query help for the queries included in the ``code-scanning``, ``securit
    javascript
    python
    
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

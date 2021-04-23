@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:adf6393fe97f2f08987a21b1b38da2c1c6ff88c0068fe47ee086ae09cfa93666
-size 1467
-=======
 .. pull-quote:: License notice
 
    If you don't have an Enterprise license then, by installing this product, you are agreeing to the 
@@ -32,4 +27,3 @@ size 1467
    continuous delivery, whether as part of normal software engineering processes
    or otherwise, except in the express cases set forth herein. For these uses,
    contact the `sales team <https://enterprise.github.com/contact>`__.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

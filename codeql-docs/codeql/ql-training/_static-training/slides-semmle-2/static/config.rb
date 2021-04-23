@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:46f00dd8ad6d8b120f5baca3946be99645372d18ebc58af13dccd8be6a3e570d
-size 865
-=======
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
@@ -27,4 +22,3 @@ output_style = :expanded #:expanded or :nested or :compact or :compressed
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c141db78dd9ea332c4116708bf31e0897d542f33572b843d82291d03f63f5144
-size 9533
-=======
 ================================
 Introduction to variant analysis
 ================================
@@ -211,4 +206,3 @@ Model answer: redundant if-statement
 .. note::
 
   You can explore the results generated when this query is run on exiv2 in LGTM `here <https://lgtm.com/query/4641433299746527262/>`__.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

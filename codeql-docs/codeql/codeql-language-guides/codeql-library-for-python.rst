@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:61d94a6ce33a087d5f1048b1a3c924a818e52189ef45c9979d727a2caeed9601
-size 16631
-=======
 .. _codeql-library-for-python:
 
 CodeQL library for Python
@@ -350,4 +345,3 @@ Further reading
 .. include:: ../reusables/python-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

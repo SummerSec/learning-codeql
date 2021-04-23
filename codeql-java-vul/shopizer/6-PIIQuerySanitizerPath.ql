@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1eff00bd46466392120d7c44c7d31b825273a2cfa4f394b1e4cfc5e783d0a7a3
-size 1440
-=======
 /**
  *@name PIIQuerySanitizerPath
  *@kind path-problem
@@ -51,4 +46,3 @@ where
     config.hasFlowPath(source, sink) and
     source.getNode().asExpr() = f.getAnAccess()
 select sink,source,sink ,"PII data from field $@ is written to long here",f ,f.getName()
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

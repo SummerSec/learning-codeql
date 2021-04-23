@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:7421643aecda4a78c1020ec85948e76319559ba56924aa607d1b3600d1a13088
-size 30431
-=======
 :tocdepth: 1
 
 .. _expressions:
@@ -705,4 +700,3 @@ For example, the following query selects all the characters in the string ``"hel
 The ``charAt(int i)`` predicate is defined on strings and usually takes an ``int`` argument.
 Here the don't care expression ``_`` is used to tell the query to select characters at
 every possible index. The query returns the values ``h``, ``e``, ``l``, and ``o``.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

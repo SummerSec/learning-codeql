@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b43163dd17566b49d715d3deb4ec74db229660c17f05ac85586fe00a9c5bbbc6
-size 6214
-=======
 .. _expressions-types-and-statements-in-cpp:
 
 Expressions, types, and statements in C and C++
@@ -141,4 +136,3 @@ Further reading
 
 .. include:: ../reusables/cpp-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

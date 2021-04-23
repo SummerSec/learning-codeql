@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbf70d4cb7d36970c74af31e6c5861b4ad91caac0cefbfd0b2d35c64f09d9536
-size 1140
-=======
 .. _codeql-for-go:
 
 CodeQL for Go
@@ -26,4 +21,3 @@ Experiment and learn how to write effective and efficient queries for CodeQL dat
 
 -  :doc:`Modeling data flow in Go libraries <modeling-data-flow-in-go-libraries>`: When analyzing a Go program, CodeQL does not examine the source code for external packages. 
    To track the flow of untrusted data through a library, you can create a model of the library.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

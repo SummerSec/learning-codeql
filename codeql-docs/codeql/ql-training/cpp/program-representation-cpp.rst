@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2a5126c8208610ae53dc779ce32d75b2f4096e04bc91730e4c8c0925ab14e0b
-size 4020
-=======
 ======================
 Program representation 
 ======================
@@ -123,4 +118,3 @@ Useful predicates on ``Element``: ``isInMacroExpansion()``, ``isAffectedByMacro(
 .. note::
 
   The CodeQL database also contains information about macro definitions, which are represented by class ``Macro``. These macro definitions are related to the AST nodes resulting from their uses by the class ``MacroAccess``.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

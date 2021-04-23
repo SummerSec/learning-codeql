@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:5338b2f7bea4859af9fe849bb8d595fcb4e8e27bc8cf8dfd1a86452a0402179f
-size 17998
-=======
 # Analyzing data flow in Java[¶](https://codeql.github.com/docs/codeql-language-guides/analyzing-data-flow-in-java/#analyzing-data-flow-in-java)
 
 You can use CodeQL to track the flow of data through a Java program to its use.
@@ -433,4 +428,3 @@ where config.hasFlow(src, sink)
 select src, "This environment variable constructs a URL $@.", sink, "here"
 ```
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

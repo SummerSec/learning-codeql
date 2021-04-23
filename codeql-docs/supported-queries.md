@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b90ac510bb1b7aabdf6d0897ff463d293fc671830d22dc94a21a5cf3e536c84a
-size 14423
-=======
 # Supported CodeQL queries and libraries
 
 Queries and libraries outside [the `experimental` directories](experimental.md) are _supported_ by GitHub, allowing our users to rely on their continued existence and functionality in the future:
@@ -178,4 +173,3 @@ The process must begin with the first step and must conclude with the final step
    - Your pull request will be flagged automatically for a review by the documentation team to ensure that the query help file is ready for wider use. 
    
        > 你的拉取请求将被自动标记，供文档团队审查，以确保查询帮助文件可以被更广泛地使用。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

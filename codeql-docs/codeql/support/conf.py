@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:b557513fc948e3ed64f9325d2bf9befa62635e14393d9ea14a6b3c5c5a36bbf9
-size 3758
-=======
 # -*- coding: utf-8 -*-
 #
 # CodeQL analysis support for LGTM Enterprise docs build configuration file.
@@ -101,4 +96,3 @@ html_favicon = '../images/site/favicon.ico'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 exclude_patterns = ['read-me-project.rst', 'reusables/*']
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

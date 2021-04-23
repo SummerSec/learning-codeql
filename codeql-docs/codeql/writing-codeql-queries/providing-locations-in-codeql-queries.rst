@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:07b217046c2950564a1282187f5b5aa034dc8c50ff55e8fee670797ed601f17a
-size 7383
-=======
 .. _providing-locations-in-codeql-queries:
 
 Providing locations in CodeQL queries
@@ -127,4 +122,3 @@ Further reading
 ---------------
 
 - `CodeQL repository <https://github.com/github/codeql>`__
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

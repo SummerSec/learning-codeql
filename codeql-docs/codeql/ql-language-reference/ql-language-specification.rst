@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c2582bfec2695a03296503dfd3dd458991af6d5109f3f9f5993ecf90bee322f
-size 152789
-=======
 :tocdepth: 1
 
 .. _ql-language-specification:
@@ -2196,4 +2191,3 @@ The complete grammar for QL is as follows:
    varname ::= simpleId
 
    literalId ::= lowerId | atLowerId | "any" | "none"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

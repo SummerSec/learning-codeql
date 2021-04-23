@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:952346623ac466175f6b1cbaf5aab8bb56696563db23a9f1abdcbd858a04b558
-size 12282
-=======
 # Overflow-prone comparisons in Java[¶](https://codeql.github.com/docs/codeql-language-guides/overflow-prone-comparisons-in-java/#overflow-prone-comparisons-in-java)
 
 You can use CodeQL to check for comparisons in Java code where one side of the comparison is prone to overflow.
@@ -204,4 +199,3 @@ select expr
 > ➤ 在LGTM.com的查询控制台中查看完整的查询。
 
 ![image-20210324164413796](https://gitee.com/samny/images/raw/master/13u44er13ec/13u44er13ec.png)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

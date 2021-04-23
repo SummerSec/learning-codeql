@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d51b1dbdea97b4950d473f1fcc9c059b2cd8e83320dec8f032ef4c4b81b0d8c
-size 20401
-=======
 # CodeQL style guide
 
 ## Introduction
@@ -599,4 +594,3 @@ For more information about documenting the code that you contribute to this repo
 | *must/always/do not* | Always adhere to this rule. | 始终遵守此规则。                                             |
 | *[quantifier/aggregation](https://help.semmle.com/QL/ql-handbook/language.html#aggregations)* | `exists`, `count`, `strictcount`, `any`, `forall`, `forex` and so on. |                                                              |
 | *variable* | A parameter to a predicate, a field, a from variable, or a variable introduced by a *quantifier* or *aggregation*. | 谓词、字段、from变量、或由*量化器*或*集合*引入的变量的参数。\| |
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

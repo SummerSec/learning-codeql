@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:bcdc575c42f3f5000f2d8efd6ddc87d030522cda0856dd548b2c0a04bb7d58a8
-size 2687
-=======
 :tocdepth: 1
 
 .. _testing-codeql-queries-in-visual-studio-code:
@@ -55,4 +50,3 @@ Further reading
 ----------------
 
 * ":ref:`Testing custom queries <testing-custom-queries>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

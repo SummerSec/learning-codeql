@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4df6c9848e9aa261a5bd44df03f9278a01900cc19ad755f0d360fd4a11ed3a1e
-size 98
-=======
 {
 	"folders": [
 		{
@@ -14,4 +9,3 @@ size 98
 	],
 	"settings": {}
 }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

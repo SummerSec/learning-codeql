@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f9e7bcff495fb3a5a8bbcd498e963efae648d68f928daf5538886912b0412f0
-size 3841
-=======
 .. _testing-query-help-files:
 
 Testing query help files
@@ -84,4 +79,3 @@ Further reading
 ---------------
 
 - ":ref:`Query help files <query-help-files>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

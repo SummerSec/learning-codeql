@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6c1c27363225ed1e23170de86434f07f79d7f161600f9346c869c919d6643326
-size 3623
-=======
 :tocdepth: 1
 
 .. index:: query
@@ -124,4 +119,3 @@ In contrast, the select clause is like an anonymous predicate, so you can't call
 
 It can also be helpful to add a ``query`` annotation to a predicate while you debug code. That
 way you can explicitly see the set of tuples that the predicate evaluates to.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

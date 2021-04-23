@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4851441d0ddbb9cca836adbd4a70c536916f320598a87f86d08f4011654bd1bc
-size 26665
-=======
 # Types in Java[¶](https://codeql.github.com/docs/codeql-language-guides/types-in-java/#types-in-java)
 
 You can use CodeQL to find out information about data types used in Java code. This allows you to write queries to identify specific type-related issues.
@@ -505,4 +500,3 @@ select juccc, "Element type " + collEltType + " is incompatible with argument ty
 
 
 ![image-20210324164441442](https://gitee.com/samny/images/raw/master/41u44er41ec/41u44er41ec.png)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

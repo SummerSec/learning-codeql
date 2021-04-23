@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:997e25790190bd2279bbdbb1aacc3e079bd7ecc2d969c9fe751a352f5a312ad7
-size 643
-=======
 {
   "author": "Joseph Kato",
   "description": "A Vale-compatible implementation of the Microsoft Writing Style Guide.",
@@ -20,4 +15,3 @@ size 643
   "vale_version": ">=1.0.0",
   "coverage": 0.0
 }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

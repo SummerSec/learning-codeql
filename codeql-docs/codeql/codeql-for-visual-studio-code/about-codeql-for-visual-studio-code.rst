@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:54398c90aa39824b34d8067dd56fe4f0aec7448e1e08bf15e5aa9925dfe13afb
-size 1647
-=======
 :tocdepth: 1
 
 .. _about-codeql-for-visual-studio-code:
@@ -36,4 +31,3 @@ Further reading
 
 - ":doc:`Setting up CodeQL in Visual Studio Code <setting-up-codeql-in-visual-studio-code>`"
 - ":doc:`Analyzing your projects <analyzing-your-projects>`"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

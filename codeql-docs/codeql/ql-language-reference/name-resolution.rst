@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bc46a1ed686352f6e9a2d342d35ada5061ea69eb72f54f2525add0df3d641e8
-size 11112
-=======
 :tocdepth: 1
 
 .. _name-resolution:
@@ -311,4 +306,3 @@ The predicate namespace of ``Villagers`` has entries for:
 The predicate namespace of ``S`` has entries for:
     - All the above predicates.
     - The predicate ``isSouthern``, with arity 1.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

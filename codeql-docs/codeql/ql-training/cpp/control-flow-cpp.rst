@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:57f022991c70fc49e6292c72f490cbc15e044215ad4cfa5ccc6a5020547c134f
-size 11382
-=======
 ======================
 Analyzing control flow
 ======================
@@ -370,4 +365,3 @@ In particular, it has an ``exprExits`` predicate that can be overridden to more 
       super.exprExits(e) or ...
     }
    }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

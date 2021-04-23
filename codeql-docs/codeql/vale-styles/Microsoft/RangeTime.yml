@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:0908c8d99792191fd9f671039f78c91b3dd3b4f49c1db23d5915ab817ae62059
-size 201
-=======
 extends: existence
 message: Use 'to' instead of a dash in '%s'.
 link: https://docs.microsoft.com/en-us/style-guide/numbers
@@ -10,4 +5,3 @@ nonword: true
 level: error
 tokens:
   - '\b(?:AM|PM)\s?[-–]\s?.+(?:AM|PM)\b'
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

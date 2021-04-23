@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d44dd3329fbdc3e6ee575512060850be5a07f7b3ab5529e1ac6d99a556254a49
-size 2058
-=======
 .. _codeql-queries:
 
 CodeQL queries
@@ -30,4 +25,3 @@ CodeQL queries are used in code scanning analyses to find problems in source cod
 - :doc:`About data flow analysis <about-data-flow-analysis>`: Data flow analysis is used to compute the possible values that a variable can hold at various points in a program, determining how those values propagate through the program and where they are used. 
 - :doc:`Creating path queries <creating-path-queries>`: You can create path queries to visualize the flow of information through a codebase.
 - :doc:`Troubleshooting query performance <troubleshooting-query-performance>`: Improve the performance of your CodeQL queries by following a few simple guidelines.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

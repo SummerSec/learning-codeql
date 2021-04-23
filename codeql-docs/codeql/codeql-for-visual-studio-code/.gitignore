@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6dab5ad28b8e02bcc12ee7d15dc2705a64681009b6dab9588b1fd0919b0f3316
-size 88
-=======
 # VSCode rst extension build directory
 _build/
 
 # VSCode rst extension settings
 .vscode
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

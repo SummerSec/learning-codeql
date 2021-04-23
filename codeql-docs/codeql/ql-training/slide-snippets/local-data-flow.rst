@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0a90716bda9b2210706db5c9bcb99d39bd55c75e46e7033c3cf4269384175ac
-size 7660
-=======
 Data flow analysis
 ==================
 
@@ -163,4 +158,3 @@ Taint tracking
   - `Java taint-tracking library <https://codeql.github.com/codeql-standard-libraries/java/semmle/code/java/dataflow/TaintTracking.qll/module.TaintTracking.html>`__ 
   - `C/C++ taint-tracking library <https://codeql.github.com/codeql-standard-libraries/cpp/semmle/code/cpp/dataflow/TaintTracking.qll/module.TaintTracking.html>`__ 
   - `C# taint-tracking library <https://codeql.github.com/codeql-standard-libraries/csharp/semmle/code/csharp/dataflow/TaintTracking.qll/module.TaintTracking.html>`__ 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

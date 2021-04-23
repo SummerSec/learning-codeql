@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:e927a24b1a0762df5c1ef7799bdfa4b8c91bde6b6007205e9fb3561d6e768f3d
-size 17244
-=======
 # Annotations in Java[¶](https://codeql.github.com/docs/codeql-language-guides/annotations-in-java/#annotations-in-java)
 
 CodeQL databases of Java projects contain information about all annotations attached to program elements.
@@ -370,4 +365,3 @@ select call, "This call invokes a deprecated method."
 ![image-20210326171743593](https://gitee.com/samny/images/raw/master/43u17er43ec/43u17er43ec.png)
 
 ![image-20210326171752120](https://gitee.com/samny/images/raw/master/52u17er52ec/52u17er52ec.png)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

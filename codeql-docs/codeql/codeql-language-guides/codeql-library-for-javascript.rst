@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:290b5b40b01d6c7b972b46c95414b0d135249501a7b636f0edd6ca3febd75cfd
-size 121134
-=======
 .. _codeql-library-for-javascript:
 
 CodeQL library for JavaScript
@@ -1040,4 +1035,3 @@ Further reading
 
 .. include:: ../reusables/javascript-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

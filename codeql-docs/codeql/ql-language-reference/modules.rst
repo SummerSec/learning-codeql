@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:8892c203e86c3e30f9d1c2b78d8a0f2aa8f0a2736afb2031b1e7faf5225346ab
-size 5733
-=======
 :tocdepth: 1
 
 .. _modules:
@@ -193,4 +188,3 @@ reference. For more information, see ":ref:`name-resolution`."
 
 For information about how import statements are looked up, see "`Module resolution <https://codeql.github.com/docs/ql-language-reference/ql-language-specification/#module-resolution>`__"
 in the QL language specification. 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

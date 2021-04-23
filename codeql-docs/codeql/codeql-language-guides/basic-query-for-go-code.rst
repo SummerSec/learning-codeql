@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:55492aae8e1505961077c4818c060a9dddf95427df717982e97210048f79c8ce
-size 13343
-=======
 .. _basic-query-for-go-code:
 
 Basic query for Go code
@@ -156,4 +151,3 @@ Further reading
 
 .. include:: ../reusables/go-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed449a26ad2064e1acd27a9966b0f1bfa2c2f7db706e9c929a7713fe2702dce1
-size 2229
-=======
 .. _query-reference-files:
 
 Query reference files
@@ -50,4 +45,3 @@ to the ``codeql-javascript`` QL pack::
     AngularJS/DeadAngularJSEventListener.ql
 
 For another example, see :doc:`Testing custom queries <testing-custom-queries>`.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

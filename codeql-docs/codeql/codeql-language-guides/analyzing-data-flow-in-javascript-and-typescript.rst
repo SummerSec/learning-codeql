@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b3e852f707acceb14cfaf92b489aecf039c126823055a33df0b92d64835a3a4
-size 27692
-=======
 .. _analyzing-data-flow-in-javascript-and-typescript:
 
 Analyzing data flow in JavaScript and TypeScript
@@ -566,4 +561,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

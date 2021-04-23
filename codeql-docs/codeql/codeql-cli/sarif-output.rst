@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:647affeb351208d6325af09a1f6e1612312e008b7327cdb0d0a046f0edca37f0
-size 41295
-=======
 .. _sarif-output:
 
 SARIF output
@@ -295,4 +290,3 @@ For character offset and length regions, the following properties will be set:
 +========================+=============================+===========+
 | ``location``           | Always                      | –         |
 +------------------------+-----------------------------+-----------+
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

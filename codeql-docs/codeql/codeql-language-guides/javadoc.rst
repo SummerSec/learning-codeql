@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:15f6711d72a70cd0500dac39163365f586916a14d6af20b8a0b049699318cf83
-size 10372
-=======
 .. _javadoc:
 
 Javadoc
@@ -230,4 +225,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:19d5399c8b0eec7a974a1c52c66368740fd5bbfeac9973428b8849581c6c9a9a
-size 17455
-=======
 # Creating path queries[¶](https://codeql.github.com/docs/writing-codeql-queries/creating-path-queries/#creating-path-queries)
 
 You can create path queries to visualize the flow of information through a codebase.
@@ -213,4 +208,3 @@ The alert message defined in the final column in the `select` statement can be d
 
 * “[Exploring data flow with path queries](https://codeql.github.com/docs/codeql-for-visual-studio-code/exploring-data-flow-with-path-queries/#exploring-data-flow-with-path-queries)”
 * [CodeQL repository](https://github.com/github/codeql)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4d7690d0c1032652c0d62264019e66baf01d14431080c1ae930ba1d786720d9
-size 17787
-=======
 /*
  * Hammer.JS
  * version 0.4
@@ -589,4 +584,3 @@ function Hammer(element, options, undefined)
         return Object.prototype.toString.call( obj ) == "[object Function]";
     }
 }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

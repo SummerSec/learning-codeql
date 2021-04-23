@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:10c03a231990c167626260ce7f976d70620aa88fd9445a8d0763093440159bfa
-size 7866
-=======
 .. _catch-the-fire-starter:
 
 Catch the fire starter
@@ -155,4 +150,3 @@ Further reading
 ---------------
 
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

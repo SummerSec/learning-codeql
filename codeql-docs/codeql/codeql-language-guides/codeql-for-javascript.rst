@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:636651931ef6862d0916bd58e097a4c1bef820be48600aa5e71dec8482850499
-size 2747
-=======
 .. _codeql-for-javascript:
 
 CodeQL for JavaScript
@@ -40,4 +35,3 @@ Experiment and learn how to write effective and efficient queries for CodeQL dat
 -  :doc:`Abstract syntax tree classes for working with JavaScript and TypeScript programs <abstract-syntax-tree-classes-for-working-with-javascript-and-typescript-programs>`: CodeQL has a large selection of classes for representing the abstract syntax tree of JavaScript and TypeScript programs.
 
 -  :doc:`Data flow cheat sheet for JavaScript <data-flow-cheat-sheet-for-javascript>`: This article describes parts of the JavaScript libraries commonly used for variant analysis and in data flow queries.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

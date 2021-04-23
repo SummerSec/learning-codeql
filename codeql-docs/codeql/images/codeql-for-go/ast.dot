@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac165eedd62a331250a7b5db0a2cc506e398ef06b71a9a8659eaab6ea86c5a72
-size 563
-=======
 digraph ast {
     graph [dpi=300];
     "x" [shape=rect];
@@ -25,4 +20,3 @@ digraph ast {
     invis1 -> invis2 [style=invis];
     invis1 -> invis3 [style=invis];
 }
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

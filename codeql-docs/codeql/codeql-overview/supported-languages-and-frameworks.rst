@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:a75fd7b17e53106eec76b62a86a6897f4c1f46fbaadce44ada642d5eff27467a
-size 888
-=======
 :tocdepth: 1
 
 .. _supported-languages-and-frameworks:
@@ -34,4 +29,3 @@ The libraries and queries in the current version of CodeQL have been explicitly 
     and sinks for additional libraries or frameworks.
     
 .. include:: ../support/reusables/frameworks.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c98af253220616caa0712a6dbb95cdead90d1a5bc1f8477fc3cb51d8693beb9
-size 11613
-=======
 # Providing locations in CodeQL queries[¶](https://codeql.github.com/docs/writing-codeql-queries/providing-locations-in-codeql-queries/#providing-locations-in-codeql-queries)
 
 CodeQL includes mechanisms for extracting the location of elements in a codebase. Use these mechanisms when writing custom CodeQL queries and libraries to help display information to users.
@@ -159,4 +154,3 @@ All classes except those that extend primitive types, must provide a `string toS
 ## Further reading[¶](https://codeql.github.com/docs/writing-codeql-queries/providing-locations-in-codeql-queries/#further-reading)
 
 * [CodeQL repository](https://github.com/github/codeql)
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:295fad4496876c0522732c210ef532992479bf75089d077e7ba6ff7bd570acbc
-size 8648
-=======
 
 
 ## Type
@@ -262,4 +257,3 @@ It inherits member predicates from `OneTwo` and `TwoThree`. It also (indirectly)
 
 参考：https://codeql.github.com/docs/ql-language-reference/types/
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

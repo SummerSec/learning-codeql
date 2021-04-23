@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:280abfd1cdbd4f63ae99515c5a972ad904694e6806d415e67131da3cac4fef62
-size 15094
-=======
 .. _types-in-java:
 
 Types in Java
@@ -308,4 +303,3 @@ Further reading
 
 .. include:: ../reusables/java-further-reading.rst
 .. include:: ../reusables/codeql-ref-tools-further-reading.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

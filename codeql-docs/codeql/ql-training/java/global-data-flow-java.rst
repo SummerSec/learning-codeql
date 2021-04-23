@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:02bae5917bce48c892751cf636b309c45a51781e3875fb3af1ff012f46a2b985
-size 5627
-=======
 ================================
 Introduction to global data flow
 ================================
@@ -189,4 +184,3 @@ Extra slides
 ============
 
 .. include:: ../slide-snippets/global-data-flow-extra-slides.rst
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

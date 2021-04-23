@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:72c28aca2eb8efd0babfe0cbd42051da756a948b7323f86be876611ce83f9d80
-size 19538
-=======
 # Working with source locations[¶](https://codeql.github.com/docs/codeql-language-guides/working-with-source-locations/#working-with-source-locations)
 
 You can use the location of entities within Java code to look for potential errors. Locations allow you to deduce the presence, or absence, of white space which, in some cases, may indicate a problem.
@@ -321,4 +316,3 @@ KEY_SLAVE = tmp[ i+1 % 2 ];
 Whitespace suggests that the programmer meant to toggle `i` between zero and one, but in fact the expression is parsed as `i + (1%2)`, which is the same as `i + 1`, so `i` is simply incremented.
 
 > 空格表明程序员的意思是在0和1之间切换i，但事实上，该表达式被解析为i+（1%2），这与i+1相同，所以i只是简单地递增。
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

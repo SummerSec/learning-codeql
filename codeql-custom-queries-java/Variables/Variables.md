@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b378bacf47437e843e7042219e734d80409e6cce60bc3f2ad5b985af4755b19
-size 10454
-=======
 # Variables[¶](https://codeql.github.com/docs/ql-language-reference/variables/#variables)变量
 
 Variables in QL are used in a similar way to variables in algebra or logic. They represent sets of values, and those values are usually restricted by a formula.
@@ -136,4 +131,3 @@ Footnotes
 | [[1\]](https://codeql.github.com/docs/ql-language-reference/variables/#id2) | This is a slight simplification. There are some formulas that are always true or always false, regardless of the assignments to their free variables. However, you won’t usually use these when you’re writing QL. For example, and `a = a` is always true (known as a [tautology](https://en.wikipedia.org/wiki/Tautology_(logic))), and `x and not x` is always false. |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [1]                                                          | 这是一种轻微的简化。有一些公式总是真或假，不管它们的自由变量的赋值如何。然而，你在编写QL时通常不会使用这些公式。例如，and a = a总是真（称为同义词），x而不是x总是假。 |
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

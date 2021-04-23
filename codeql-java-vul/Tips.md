@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:2317a3aa6b4fd29198c1ee21ad354174ce0989330d36c287a20d8489bc69bcf3
-size 3328
-=======
 ## 编写CodeQL过程中学习到小TIPS
 
 
@@ -163,4 +158,3 @@ select sink, "PII data from field $@ is written to long here",f , f.getName()
 
     ![](https://gitee.com/samny/images/raw/master/22u23er22ec/22u23er22ec.png)
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

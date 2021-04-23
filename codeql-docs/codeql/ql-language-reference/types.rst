@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f0bf01bfbf3c02f5ab65e89c7e5a4f0de8dd275c8a2efa64bccfe79e2308b998
-size 22426
-=======
 :tocdepth: 1
 
 .. index:: type
@@ -599,4 +594,3 @@ For example, when defining a :ref:`class <classes>` this leads to the following 
     - A class can't extend multiple primitive types.
     - A class can't extend multiple different database types.
     - A class can't extend multiple different branches of an algebraic datatype.
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

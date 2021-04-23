@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2b4d4dde588a1c17532cddbec57160dd2c1ba9995c035906a402834546e80cb
-size 101688
-=======
 .. _codeql-library-for-cpp:
 
 CodeQL library for C and C++
@@ -759,4 +754,3 @@ Further reading
 .. _Char32Type: https://codeql.github.com/codeql-standard-libraries/cpp/semmle/code/cpp/Type.qll/type.Type$Char32Type.html
 
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e69ee8ba81cf1594e6b78d0d472a73a9167474c4a12db8566f985c9dca2a821
-size 11986
-=======
 # About data flow analysis[¶](https://codeql.github.com/docs/writing-codeql-queries/about-data-flow-analysis/#about-data-flow-analysis)
 
 Data flow analysis is used to compute the possible values that a variable can hold at various points in a program, determining how those values propagate through the program and where they are used.
@@ -111,4 +106,3 @@ In QL, taint tracking extends data flow analysis by including steps in which the
 
 * “[Exploring data flow with path queries](https://codeql.github.com/docs/codeql-for-visual-studio-code/exploring-data-flow-with-path-queries/#exploring-data-flow-with-path-queries)”
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

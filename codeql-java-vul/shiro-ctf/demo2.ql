@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc9640e032149668f332dc9e184df8ca0ed65b7caefdfd724c2b1f70cc139bfe
-size 1129
-=======
 /**
  * @name Unsafe shiro deserialization
  * @kind path-problem
@@ -46,4 +41,3 @@ from ShiroUnsafeDeserializationConfig config, DataFlow::PathNode source, DataFlo
 where config.hasFlowPath(source, sink)
 select sink.getNode(), source, sink, "Unsafe shiro deserialization" ,source.getNode(), "this user input"
 // select sink, source, sink, "Unsafe shiro deserialization" ,source, "this user input"
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

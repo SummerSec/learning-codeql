@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d2fea727e4a82cef3dfcca96d7a15ca8b8615127c78ff43fe1a1cd1ea453295
-size 2110
-=======
 .. _codeql-for-visual-studio-code:
 
 CodeQL for Visual Studio Code
@@ -56,4 +51,3 @@ The CodeQL extension for Visual Studio Code adds rich language support for CodeQ
    testing-codeql-queries-in-visual-studio-code
    customizing-settings
    troubleshooting-codeql-for-visual-studio-code
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

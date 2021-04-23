@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:56ec24ce5f158c101ccd1eef5f0ce779e88c8c9dd307c22e6a90bd47eb6ea330
-size 6705
-=======
 :tocdepth: 1
 
 .. index:: recursion
@@ -211,4 +206,3 @@ In fact, you could rewrite the second part of the definition as follows:
     forall(Person descendant | descendant.getAParent+() = this | 
       descendant.isExtinct()
     )
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

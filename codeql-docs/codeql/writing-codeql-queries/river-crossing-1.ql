@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:f5a3b16510e387e3975455bd96e8c6255da62c93135c33b85222dbde91307e5d
-size 3251
-=======
 /**
  * @name River crossing puzzle (version 1)
  * @description An "elementary" version of the solution to
@@ -105,4 +100,3 @@ from string path
 where any(InitialState i).reachesVia(path, _) = any(GoalState g)
 select path
 
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-version https://git-lfs.github.com/spec/v1
-oid sha256:08824867a65c53e950e17666ec847b73755ac8750603bddd8b5f31cbf28712a4
-size 3557
-=======
 :tocdepth: 1
 
 .. index:: alias
@@ -129,4 +124,3 @@ You could give the predicate a more descriptive name as follows:
 .. code-block:: ql
 
     predicate lessThanTen = isSmall/1;
->>>>>>> 2922c58a68ebfd227bf7f28067abeae71562dca5
