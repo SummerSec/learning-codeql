@@ -4,8 +4,8 @@ from Class cl
 where 
     cl.getASupertype() instanceof  TypeSerializable
     /* 递归判断类是不是实现Serializable接口*/
-    and 
-    cl.fromSource()
+    // and 
+    // cl.fromSource()
     /* 限制来源 */
 select cl
 /* 查询语句 */
