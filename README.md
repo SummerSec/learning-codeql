@@ -51,7 +51,7 @@ ps: 排列顺序由本人发现时间为主，CodeQL 频道里面包含大量视
 |                                                              |                                                     |                                                              | [使用 CodeQL 分析闭源 Java 程序](https://paper.seebug.org/1324/) |                                                              |
 |                                                              |                                                     |                                                              | [finding-insecure-jwt-signature-validation-with-codeql](https://intrigus.org/research/2021/08/05/finding-insecure-jwt-signature-validation-with-codeql/) |                                                              |
 |                                                              |                                                     |                                                              | [Apache Dubbo: All roads lead to RCE](https://securitylab.github.com/research/apache-dubbo/) |                                                              |
-|                                                              |                                                     |                                                              |                                                              |                                                              |
+|                                                              |                                                     |                                                              | [CodeQL从0到1（内附Shiro检测demo）](https://www.anquanke.com/post/id/255721) |                                                              |
 
 
 
