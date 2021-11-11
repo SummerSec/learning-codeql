@@ -57,7 +57,7 @@ ps: 排列顺序由本人发现时间为主，CodeQL 频道里面包含大量视
 |                                                              |                                                     |                                                              | [CodeQL with CVE-2021-2471](http://m0d9.me/2021/11/01/CodeQL-CVE-2021-2471/) |                                                              |
 |                                                              |                                                     |                                                              | [CodeQL 若干问题思考及 CVE-2019-3560 审计详解](https://lennysec.github.io/codql-and-cve-2019-3560/) |                                                              |
 |                                                              |                                                     |                                                              | [从Java反序列化漏洞题看CodeQL数据流](https://www.anquanke.com/post/id/256967) |                                                              |
-|                                                              |                                                     |                                                              |                                                              |                                                              |
+|                                                              |                                                     |                                                              | [记一次Log4j失败的Gadget挖掘记录](https://tttang.com/archive/1314/) |                                                              |
 
 
 
