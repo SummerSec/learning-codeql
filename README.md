@@ -61,7 +61,7 @@ ps: 排列顺序由**发现时间和pr提交时间**为主，CodeQL 频道里面
 |                                                              |                                                     |                                                              | [记一次Log4j失败的Gadget挖掘记录](https://tttang.com/archive/1314/) |                                                              |
 |                                                              |                                                     |                                                              | [浅谈利用codeql进行java代码审计分析（1）](https://tttang.com/archive/1322/) |                                                              |
 |                                                              |                                                     |                                                              | [CodeQL SSA Study.md](https://github.com/haby0/mark/blob/master/articles/2021/CodeQL%20SSA%20Study.md) |                                                              |
-|                                                              |                                                     |                                                              |                                                              |                                                              |
+|                                                              |                                                     |                                                              | [CVE-2021-43815](https://securitylab.github.com/advisories/GHSL-2021-1053_Grafana/) |                                                              |
 
 
 
