@@ -28,7 +28,17 @@ CodeQL学习笔记  `只有Java`
 
 
 
+**入门建议**
 
+建议先把CodeQL语法学习一遍，上面的目录建议依次学习。
+
+**进阶建议**
+
+阅读大量源码，学习ql目录下的规则编写。
+
+然后学习PL课程
+
+https://github.com/shining1984/PL-Compiler-Resource
 
 
 
@@ -46,7 +56,7 @@ ps: 排列顺序由**发现时间和pr提交时间**为主，CodeQL 频道里面
 | [What is GitHub Code Scanning? Find VULNERABILITIES in your code](https://youtu.be/A8SERCUE-i4) | [@GHSecurityLab](https://twitter.com/GHSecurityLab) | [CodeQL Queries for Insecure JMS Deserialization](https://github.com/silentsignal/jms-codeql/) | [代码分析引擎 CodeQL 初体验](https://paper.seebug.org/1078/#_1) | [ghas-bootcamp](https://github.com/ghas-bootcamp)            |
 | [$3,000 CodeQL query for finding LDAP Injection - Github Security Lab ]( https://youtu.be/qStzSfsEQGQ) | [@pwntester](https://twitter.com/pwntester)         | [Apache Struts CVE-2018-11776](https://github.com/github/securitylab/blob/main/CodeQL_Queries/java/Apache_Struts_CVE-2018-11776) | [使用codeql挖掘fastjson利用链](https://xz.aliyun.com/t/7482) |                                                              |
 | [CodeQL 频道](https://www.youtube.com/channel/UCudgrgkdUUA17vqnrHzXtVw) | [@smowton](https://github.com/smowton)              | [codeql-jdk-docke](https://github.com/Marcono1234/codeql-jdk-docker) | [使用 CodeQL 挖掘 CVE-2020-9297](https://xz.aliyun.com/t/7979) |                                                              |
-| [CodeQL as an auditing oracle - POC 2020](https://www.youtube.com/watch?v=XmAEgl8bVhg) |                                                     | [codeql-dubbo-workshop](https://github.com/github/codeql-dubbo-workshop) | [codeql学习——污点分析](https://xz.aliyun.com/t/7789)         |                                                              |
+| [CodeQL as an auditing oracle - POC 2020](https://www.youtube.com/watch?v=XmAEgl8bVhg) | [@yangbh](https://github.com/yangbh)                | [codeql-dubbo-workshop](https://github.com/github/codeql-dubbo-workshop) | [codeql学习——污点分析](https://xz.aliyun.com/t/7789)         |                                                              |
 | [mbuf-oflow: Finding Vulnerabilities In iOS/MacOS Networking Code](https://www.youtube.com/watch?v=0EHP2gzwVAY) |                                                     | [LookupInterface](https://github.com/SummerSec/LookupInterface) | [如何用CodeQL数据流复现 apache kylin命令执行漏洞](https://xz.aliyun.com/t/8240) |                                                              |
 | [Community-powered security analysis with CodeQL - GitHub Universe 2020](https://youtu.be/Y6PjAaZKNYk) |                                                     | [jms-codeql](https://github.com/silentsignal/jms-codeql/)    | [CodeQL从入门到放弃](https://www.freebuf.com/articles/web/283795.html) |                                                              |
 | [Using GitHub code scanning and CodeQL to detect traces of Solorigate and other backdoors](https://github.blog/2021-03-16-using-github-code-scanning-and-codeql-to-detect-traces-of-solorigate-and-other-backdoors/) |                                                     | [lgtm_hack_scripts](https://github.com/JLLeitschuh/lgtm_hack_scripts) | [CodeQL 快速上手](https://www.yuque.com/docs/share/738555ae-258e-4f27-8818-6024b8225488?#) |                                                              |
@@ -62,6 +72,7 @@ ps: 排列顺序由**发现时间和pr提交时间**为主，CodeQL 频道里面
 |                                                              |                                                     |                                                              | [浅谈利用codeql进行java代码审计分析（1）](https://tttang.com/archive/1322/) |                                                              |
 |                                                              |                                                     |                                                              | [CodeQL SSA Study.md](https://github.com/haby0/mark/blob/master/articles/2021/CodeQL%20SSA%20Study.md) |                                                              |
 |                                                              |                                                     |                                                              | [CVE-2021-43815](https://securitylab.github.com/advisories/GHSL-2021-1053_Grafana/) |                                                              |
+|                                                              |                                                     |                                                              | [detecting-jackson-deserialization-vulnerabilities-with-codeql.html](https://blog.gypsyengineer.com/en/security/detecting-jackson-deserialization-vulnerabilities-with-codeql.html) |                                                              |
 
 
 
