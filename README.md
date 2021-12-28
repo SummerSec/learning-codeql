@@ -32,6 +32,10 @@ CodeQL学习笔记  `只有Java`
 
 建议先把CodeQL语法学习一遍，上面的目录建议依次学习。
 
+**强烈建议学习AST抽象语法树** 
+
+
+
 **进阶建议**
 
 阅读大量源码，学习ql目录下的规则编写。
@@ -73,6 +77,7 @@ ps: 排列顺序由**发现时间和pr提交时间**为主，CodeQL 频道里面
 |                                                              |                                                     |                                                              | [CodeQL SSA Study.md](https://github.com/haby0/mark/blob/master/articles/2021/CodeQL%20SSA%20Study.md) |                                                              |
 |                                                              |                                                     |                                                              | [CVE-2021-43815](https://securitylab.github.com/advisories/GHSL-2021-1053_Grafana/) |                                                              |
 |                                                              |                                                     |                                                              | [detecting-jackson-deserialization-vulnerabilities-with-codeql.html](https://blog.gypsyengineer.com/en/security/detecting-jackson-deserialization-vulnerabilities-with-codeql.html) |                                                              |
+|                                                              |                                                     |                                                              | [利用CodeQL分析并挖掘Log4j漏洞](https://mp.weixin.qq.com/s/JYco8DysQNszMohH6zJEGw) |                                                              |
 
 
 
