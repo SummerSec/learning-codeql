@@ -78,6 +78,7 @@ ps: 排列顺序由**发现时间和pr提交时间**为主，CodeQL 频道里面
 |                                                              |                                                     |                                                              | [CVE-2021-43815](https://securitylab.github.com/advisories/GHSL-2021-1053_Grafana/) |                                                              |
 |                                                              |                                                     |                                                              | [detecting-jackson-deserialization-vulnerabilities-with-codeql.html](https://blog.gypsyengineer.com/en/security/detecting-jackson-deserialization-vulnerabilities-with-codeql.html) |                                                              |
 |                                                              |                                                     |                                                              | [利用CodeQL分析并挖掘Log4j漏洞](https://mp.weixin.qq.com/s/JYco8DysQNszMohH6zJEGw) |                                                              |
+|                                                              |                                                     |                                                              | [CodeQL 提升篇](https://tttang.com/archive/1415/)            |                                                              |
 
 
 
